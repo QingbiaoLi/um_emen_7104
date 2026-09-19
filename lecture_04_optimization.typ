@@ -12,15 +12,17 @@
 
 #let handout = true
 
+
 #show: university-theme.with(
   aspect-ratio: "16-9",
   config-common(handout: handout),
   config-info(
     title: [Optimization],
-    subtitle: [CISC 7026 - Introduction to Deep Learning],
-    author: [Steven Morad],
+    subtitle: [EMEN 7029 & EMEN 7104 - Special Topic In Electromechanical Engineering / Robotics],
+    
+    author: [Qingbiao Li],
     institution: [University of Macau],
-    logo: image("figures/common/bolt-logo.png", width: 4cm)
+    logo: image("figures/common/UM_FIC_logo.png", width: 8.6cm)
   ),
   header-right: none,
   header: self => utils.display-current-heading(level: 1)
@@ -100,22 +102,6 @@
     outline(title: none, indent: 1em, depth: 1)
 )
 
-= Admin
-
-==
-Exam next lecture, it will be *hard*, make sure you study! #pause
-- 1 question function notation
-- 1 question set notation
-- 1 question linear regression (invert 2x2 matrices, understand hw1)
-- 1 question coding (shapes)
-- 1 question neural networks (neuron)
-- 1 question gradient descent (take and evaluate derivatives, no need to memorize formulas) #pause
-
-Chinese translation for exam questions 所有考试题目均提供中文翻译
-
-Only need pen or pencil 
-
-==
 
 // 4:00
 
@@ -1044,7 +1030,7 @@ $ (nabla_bold(theta) f)(bold(x), bold(theta)) = #pause vec( (partial f(bold(x), 
 
 = Coding
 ==
-  How do gradients work in `jax` or `torch`? #pause
+  How do gradients work in `torch`? #pause
 
   The libraries compute the gradients using *autograd* #pause
 
@@ -1057,25 +1043,25 @@ $ (nabla_bold(theta) f)(bold(x), bold(theta)) = #pause vec( (partial f(bold(x), 
 
   Researchers derive their own analytical gradients like we did today #pause
 
-  Now, let us look at `jax` and `torch` optimization code
+  Now, let us look at `torch` optimization code
 
-==
+// ==
 
-  ```python
-  import jax
+//   ```python
+//   import jax
 
-  def L(theta, X, Y):
-    ...
+//   def L(theta, X, Y):
+//     ...
 
-  # Create a new function that is the gradient of L
-  # Then compute gradient of L for given inputs
-  # (grad_theta L)(X, Y, theta)
-  # argnums=2 means differentiate for second input theta
-  J = jax.grad(L, argnums=2)(X, Y, theta)
-  # Update parameters
-  alpha = 0.0001
-  theta = theta - alpha * J
-  ```
+//   # Create a new function that is the gradient of L
+//   # Then compute gradient of L for given inputs
+//   # (grad_theta L)(X, Y, theta)
+//   # argnums=2 means differentiate for second input theta
+//   J = jax.grad(L, argnums=2)(X, Y, theta)
+//   # Update parameters
+//   alpha = 0.0001
+//   theta = theta - alpha * J
+//   ```
 
 ==
   ```python
@@ -1096,4 +1082,4 @@ $ (nabla_bold(theta) f)(bold(x), bold(theta)) = #pause vec( (partial f(bold(x), 
 ==
   Time for some interactive coding
 
-  https://colab.research.google.com/drive/1W8WVZ8n_9yJCcOqkPVURp_wJUx3EQc5w
+  https://colab.research.google.com/drive/1EXhGq5mcKcYkKOdbsXjUoJaSKs-J78yk?usp=sharing

@@ -14,15 +14,17 @@
 
 // cetz and fletcher bindings for touying
 
+
 #show: university-theme.with(
   aspect-ratio: "16-9",
   config-common(handout: handout),
   config-info(
     title: [Neural Networks],
-    subtitle: [CISC 7026 - Introduction to Deep Learning],
-    author: [Steven Morad],
+    subtitle: [EMEN 7029 & EMEN 7104 - Special Topic In Electromechanical Engineering / Robotics],
+    
+    author: [Qingbiao Li],
     institution: [University of Macau],
-    logo: image("figures/common/bolt-logo.png", width: 4cm)
+    logo: image("figures/common/UM_FIC_logo.png", width: 8.6cm)
   ),
   header-right: none,
   header: self => utils.display-current-heading(level: 1)
@@ -94,18 +96,10 @@
 = Admin
 ==
 How is assignment 1? #pause
-- Due next week, 32/109 completed #pause
+- Due next week, 42/63 submitted for EME, and 50/70 submitted for RAS #pause
   - You are very disciplined, great job! #pause
-  - One student completed it before the lecture finished #pause
+  - Make sure you submitted instead of drafted
 
-I will be away for the next two weeks #pause
-- My TAs will hold office hours in E11-4084, same time #pause
-- You may email them questions: yc57439,yc57442,mc45154,mc45189
-
-Exam 1 in two weeks #pause
-- It will be hard #pause
-- Starting assignment 2 before exam will help you #pause
-  - Make sure you can compute gradients
 
 = Review
 ==
@@ -986,7 +980,7 @@ Tells us when the neural fires (activates)
   ]
 
 ==
-  Let us create a wide neural network in colab! https://colab.research.google.com/drive/1bLtf3QY-yROIif_EoQSU1WS7svd0q8j7?usp=sharing
+  Let us create a wide neural network in colab! https://colab.research.google.com/drive/1uCLnERcamA4PX-ozWZlGivq3m8UEJwiW?usp=sharing
 
 ==
   #side-by-side(align: left + top)[

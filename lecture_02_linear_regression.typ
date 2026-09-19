@@ -13,22 +13,24 @@
 #let cetz-canvas = touying-reducer.with(reduce: cetz.canvas, cover: cetz.draw.hide.with(bounds: true))
 #let fletcher-diagram = touying-reducer.with(reduce: fletcher.diagram, cover: fletcher.hide)
 
+
 #show: university-theme.with(
   aspect-ratio: "16-9",
   config-common(handout: handout),
   config-info(
     title: [Linear Regression],
-    subtitle: [CISC 7026 - Introduction to Deep Learning],
-    author: [Steven Morad],
+    subtitle: [EMEN 7029 & EMEN 7104 - Special Topic In Electromechanical Engineering / Robotics],
+    
+    author: [Qingbiao Li],
     institution: [University of Macau],
-    logo: image("figures/common/bolt-logo.png", width: 4cm)
+    logo: image("figures/common/UM_FIC_logo.png", width: 8.6cm)
   ),
   header-right: none,
   header: self => utils.display-current-heading(level: 1)
 )
+
 #set math.vec(delim: "[")
 #set math.mat(delim: "[")
-
 
 #let log_plot = canvas(length: 1cm, {
   plot.plot(size: (8, 6),
@@ -66,32 +68,6 @@
     outline(title: none, indent: 1em, depth: 1)
 )
 
-
-= Announcements
-==
-Homework 0 was ok? #pause
-
-Homework 1 released, due in ~2 weeks (see Moodle) #pause
-- Discuss more at the end of class #pause
-
-I will be away 09.12 and 09.19 #pause
-- Yutao will lecture 09.12 #pause
-- My students will proctor exam 1 on 09.19 #pause
-
-==
-
-Currently writing exam 1, probably 6 questions: #pause
-- 1 question function notation
-- 1 question set notation
-- 2 questions linear regression (make sure you can invert 2x2 matrices)
-- 1 question neural networks (neurons)
-- 1 question gradient descent (know how to take derivatives, no need to memorize formulas) #pause
-
-Bring a pen/pencil/eraser to exam, you need nothing else #pause
-
-You will have 3 hours to finish the exam #pause
-- Probably takes most students 1-1.5 hours #pause
-- No rush, take as long as you need
 
 = Review
 ==
@@ -977,10 +953,7 @@ Now, we need to find the parameters $bold(theta) = vec(theta_0, theta_1)$ that m
 = Homework
 
 ==
-Homework 1 is released, due in two weeks #pause
-
-You will predict life expectancy based on education #pause
-- Maybe this convinces you to do a PhD
+Homework 1 will be released, due in two weeks #pause
 
 
 ==
@@ -995,11 +968,12 @@ def f(theta, design):
 Not all matrices can be inverted! Ensure the matrices are square and the condition number is low
 
 ```py
+import torch
 A.shape
-cond = jax.numpy.linalg.cond(A)
+cond = torch.linalg.cond(A)
 ``` #pause
 
 Everything you need is in the lecture notes
 
 ==
-https://colab.research.google.com/drive/1I6YgapkfaU71RdOotaTPLYdX9WflV1me
+https://colab.research.google.com/drive/1VebK7j4EKZ8N5Ykvxn8OYXgxhDYsYZhe?usp=sharing

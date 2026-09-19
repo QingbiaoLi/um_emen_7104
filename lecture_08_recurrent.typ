@@ -13,15 +13,17 @@
 #set math.vec(delim: "[")
 #set math.mat(delim: "[")
 
+
+
 #show: university-theme.with(
   aspect-ratio: "16-9",
   config-common(handout: handout),
   config-info(
     title: [Recurrence],
-    subtitle: [CISC 7026 - Introduction to Deep Learning],
-    author: [Steven Morad],
+    subtitle: [EMEN 7029 & EMEN 7104 - Special Topic In Electromechanical Engineering / Robotics], 
+    author: [Qingbiao Li],
     institution: [University of Macau],
-    logo: image("figures/common/bolt-logo.png", width: 4cm)
+    logo: image("figures/common/UM_FIC_logo.png", width: 8.6cm)
   ),
   header-right: none,
   header: self => utils.display-current-heading(level: 1)

@@ -20,10 +20,11 @@
   config-common(handout: handout),
   config-info(
     title: [Introduction],
-    subtitle: [CISC 7026 - Introduction to Deep Learning],
-    author: [Steven Morad],
+    subtitle: [EMEN 7029 & EMEN 7104 - Special Topic In Electromechanical Engineering / Robotics],
+    
+    author: [Qingbiao Li],
     institution: [University of Macau],
-    logo: image("figures/common/bolt-logo.png", width: 4cm)
+    logo: image("figures/common/UM_FIC_logo.png", width: 8.6cm)
   ),
   header-right: none,
   header: self => utils.display-current-heading(level: 1)
@@ -32,6 +33,15 @@
 
 
 #title-slide()
+
+= Course Structure - Resources <touying:hidden>
+==
+I designed the course material myself #pause
+- Assignments inspired by CISC 7026 - Introduction to Deep Learnin given by Prof. Steven Morad #pause
+- You can view presentation source code online 
+  - https://github.com/QingbiaoLi/um_emen_7104 #pause
+- I will upload slides to moodle after lecture 
+
 
 = Outline <touying:hidden>
 
@@ -320,7 +330,6 @@ This course follows the history of deep learning #pause
 You will use Python with machine learning libraries in this course #pause
 
 We will specifically focus on: #pause
-  - JAX #pause
   - PyTorch #pause
 
 You should become comfortable using these libraries #pause
@@ -328,35 +337,16 @@ You should become comfortable using these libraries #pause
   - Play with the libraries
 
 ==
-Both JAX and PyTorch are libraries for the Python language #pause
+PyTorch are libraries for the Python language #pause
 
-They are both based on `numpy`, which itself is based on `MATLAB` #pause
+It is based on `numpy`, which itself is based on `MATLAB` #pause
 
 Both libraries are *tensor processing* libraries #pause
   - Designed for linear algebra and taking derivatives #pause
 
 To install, use `pip` #pause
   - `pip install torch` #pause
-  - `pip install jax jaxlib`
 
-==
-Create vectors, matrices, or tensors in `jax`
-
-```python
-  import jax.numpy as jnp
-  a = jnp.array(1) # Scalar
-  b = jnp.array([1, 2]) # Vector
-  C = jnp.array([[1,2], [3,4]]) # 2x2 Matrix
-  D = jnp.ones((3,3,3)) # 3x3x3 Tensor
-```
-
-You can determine the dimensions of a variable using `shape`
-
-```python
-  b.shape # Prints (2,)
-  C.shape # Prints (2,2)
-  D.shape # prints (3,3,3)
-```
 
 ==
 Create vectors, matrices, or tensors in `pytorch`
@@ -376,25 +366,11 @@ You can determine the dimensions of a variable using `shape`
   C.shape # Prints (2,2)
   D.shape # prints (3,3,3)
 ```
+
 ==
-Most operations in `jax` and `pytorch` are *vectorized* #pause
+`Pytorch` are *vectorized* #pause
   - Executed in parallel, very fast #pause
 
-```python
-  import jax.numpy as jnp
-  
-  s = 5 * jnp.array([1, 2])
-  print(s) # jnp.array(5, 10)
-  x = jnp.array([1, 2]) + jnp.array([3, 4])
-  print(x) # jnp.array([4, 6])
-  y = jnp.array([1, 2]) * jnp.array([3, 4]) # Careful!
-  print(y) # jnp.array([3, 8])
-  z = jnp.array([[1], [2]]) @ jnp.array([[3, 4]])
-  print(z) # A^t B (dot product), jnp.array([[11]])
-
-```
-==
-`pytorch` is very similar to `jax`
 
 ```python
   import torch
@@ -409,19 +385,7 @@ Most operations in `jax` and `pytorch` are *vectorized* #pause
   print(z) # A^t B (dot product), torch.tensor([[11]])
 ```
 ==
-  You can also call various methods on arrays/tensors
-  ```python
-  import jax.numpy as jnp
-
-  x = jnp.array([[1, 2], [3, 4]]).sum(axis=0) 
-  print(x) # Sum across leading axis, array([4, 6])
-  y = jnp.array([[1, 2], [3, 4]]).mean()
-  print(y) # Mean across all axes, array(2.5)
-  z = jnp.array([[1, 2], [3, 4]]).reshape((4,))
-  print(z) # jnp.array([1, 2, 3, 4])
-  ```
-==
-Same thing for `pytorch`
+ You can also call various methods on arrays/tensors
 ```python
 import torch
 
@@ -433,28 +397,12 @@ z = torch.tensor([[1, 2], [3, 4]]).reshape((4,))
 print(z) # torch.tensor([1, 2, 3, 4])
 ```
 
-==
-These libraries can produce tricky error messages! #pause
-#text(size: 20pt)[
-```python
->>> jnp.array([[1,2]]) @ jnp.array([[3,4]]) # (1, 2) x (1, 2)
-Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
-File "/local/scratch/sm2558/miniconda3/envs/jax/lib/python3.11/site-packages/jax/_src/numpy/array_methods.py", line 256, in deferring_binary_op
-  return binary_op(*args)
-          ^^^^^^^^^^^^^^^^
-File "/local/scratch/sm2558/miniconda3/envs/jax/lib/python3.11/site-packages/jax/_src/numpy/lax_numpy.py", line 3192, in matmul
-  out = lax.dot_general(
-        ^^^^^^^^^^^^^^^^
-TypeError: dot_general requires contracting dimensions to have the same shape, got (2,) and (1,).
-```
-]
 
 = Coding
 ==
   Let us do a Google Colab tutorial with assignment 0!
 
-  https://colab.research.google.com/drive/1lIYP8f0hZCD_gFdUzzzTZceiV3f98x2a?usp=sharing
+https://colab.research.google.com/drive/14bX3Wv6jFC_TahLJyiAXiztZh-WBqTAJ?usp=sharing
 ==
   Let us set up a local `conda` environment
 ==
@@ -462,6 +410,6 @@ TypeError: dot_general requires contracting dimensions to have the same shape, g
 *Homework:* #pause
 - Review linear algebra if you are not familiar #pause
 - Complete assignment 0 on Moodle (optional, ungraded) #pause
-  - If you know `torch` or `jax` it should take 5 minutes #pause
-  - If you don't know `torch` or `jax` it is important you learn #pause
-  - Read the documentation for `jax` and `torch` -- it is very good!
+  - If you know `torch` it should take 5 minutes #pause
+  - If you don't know `torch` it is important you learn #pause
+  - Read the documentation for `torch` -- it is very good!
