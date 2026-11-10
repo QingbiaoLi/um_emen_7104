@@ -1,0 +1,5 @@
+-r requirements.txt
+notebook>=7,<8
+nbformat>=5.9,<6
+nbclient>=0.10,<1
+ipykernel>=6,<8

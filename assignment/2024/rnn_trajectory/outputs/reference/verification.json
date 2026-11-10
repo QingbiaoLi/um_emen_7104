@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-30",
+  "python": "3.12.13 (main, Mar  3 2026, 12:39:30) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "platform": "macOS-15.8-arm64-arm-64bit",
+  "checks": {
+    "solution_public_checks": "passed, both models",
+    "student_filled_public_checks": "passed, both models",
+    "student_filled_40_epoch_run": "identical test metrics, complete history, splits, and all prediction arrays",
+    "student_blank_count": 13,
+    "student_ast_after_filling": "identical to solution except module docstring",
+    "saved_checkpoint_predictions": "all test windows reproduced within 5e-5 m tolerance",
+    "python_compile": "passed",
+    "student_package": "CRC passed; no solution, reference weights or outputs"
+  },
+  "reference_test": {
+    "constant_velocity": {
+      "ADE_m": 1.149397850036621,
+      "FDE_m": 2.4306983947753906
+    },
+    "last_position": {
+      "ADE_m": 12.341394424438477,
+      "FDE_m": 23.205488204956055
+    },
+    "elman": {
+      "ADE_m": 0.9792452454566956,
+      "FDE_m": 2.1335158348083496
+    },
+    "gated": {
+      "ADE_m": 0.9509057402610779,
+      "FDE_m": 2.074247121810913
+    }
+  }
+}

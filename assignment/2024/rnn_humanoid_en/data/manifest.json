@@ -1,0 +1,2384 @@
+{
+  "dataset": "PHUMA",
+  "robot": "Unitree G1",
+  "revision": "48b0f5982969104ab041461e594a8b8c36db8ba5",
+  "url": "https://huggingface.co/datasets/DAVIAN-Robotics/PHUMA/resolve/48b0f5982969104ab041461e594a8b8c36db8ba5/data.zip",
+  "retrieved_date": "2026-10-30",
+  "license_declared_by_dataset_card": "Apache-2.0",
+  "selection": {
+    "prefix": "data/g1/idea400/",
+    "contains": "walking",
+    "regex": "number_|hand_pockets|arm_swing|clapping|salute|waving|pointing"
+  },
+  "task": "2D root translation forecast for walking with simple upper-body gestures",
+  "data_kind": "Retargeted humanoid reference motion; not measured robot execution logs",
+  "coordinates": "Z-up source world frame, meters; model uses root_trans[:, :2]",
+  "processing": "Take every third 30 Hz frame to 10 Hz; retain xyz; no smoothing or interpolation",
+  "split_policy": "Group by source name before clip/chunk suffix; seed 42, 70/15/15; classroom split, not paper benchmark",
+  "sha256_npz": "966c5c04eed69913cd17d8dc77973c0e8bfb12ba601761c92af634aa9380055a",
+  "num_sequences": 295,
+  "num_source_groups": 169,
+  "frames_10hz": 10006,
+  "sequences": [
+    {
+      "archive_path": "data/g1/idea400/Arm_Swing_and_walking_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Arm_Swing_and_walking_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "834055b3576e02923526b446b3eeda2cff09a8d2288698d88636de1ddbdfb804",
+      "zip_crc32": 3534435398
+    },
+    {
+      "archive_path": "data/g1/idea400/Arm_Swing_and_walking_at_the_same_time_1_clip1_chunk_0002.npy",
+      "source_group": "idea400/Arm_Swing_and_walking_at_the_same_time_1",
+      "frames_raw": 41,
+      "fps_raw": 30.0,
+      "sha256_raw": "f781c5a93cfd904321991d42c40bfec62ef62f85cabf2a361e4a30b215306c4b",
+      "zip_crc32": 1399470688
+    },
+    {
+      "archive_path": "data/g1/idea400/Arm_Swing_and_walking_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/Arm_Swing_and_walking_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "a0e8d7193c6f3cd66f8abb3995ac76cffcc7b86b29e436f9056b7032465c3c10",
+      "zip_crc32": 3657164112
+    },
+    {
+      "archive_path": "data/g1/idea400/Arm_Swing_and_walking_at_the_same_time_clip1_chunk_0002.npy",
+      "source_group": "idea400/Arm_Swing_and_walking_at_the_same_time",
+      "frames_raw": 65,
+      "fps_raw": 30.0,
+      "sha256_raw": "0098b8e4496490007aac6edc3b3b9082ae1efe30e3ecfdf69e71a04aa033d25d",
+      "zip_crc32": 2308788337
+    },
+    {
+      "archive_path": "data/g1/idea400/Arm_Swing_during_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Arm_Swing_during_walking_1",
+      "frames_raw": 124,
+      "fps_raw": 30.0,
+      "sha256_raw": "e23cdb0741a3174c3149d4f25dd9547621c29b667b7e84a81c5db8cc86dc2325",
+      "zip_crc32": 2037783903
+    },
+    {
+      "archive_path": "data/g1/idea400/Arm_Swing_during_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Arm_Swing_during_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "d1a459400ef3175127bbf51660a6ccd083463426123c00910e1abf83960e70aa",
+      "zip_crc32": 3801209828
+    },
+    {
+      "archive_path": "data/g1/idea400/Arm_Swing_during_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Arm_Swing_during_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "aa384a97966d7acb9f460f6d825f93f9fab65894b5ebaabac69766abcc16999d",
+      "zip_crc32": 318063592
+    },
+    {
+      "archive_path": "data/g1/idea400/Arm_Swing_while_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Arm_Swing_while_walking",
+      "frames_raw": 52,
+      "fps_raw": 30.0,
+      "sha256_raw": "bfa071be1701080d77f8ca83c4f831444f2d1a5f57d2e44687e93c3544958fb3",
+      "zip_crc32": 1078422574
+    },
+    {
+      "archive_path": "data/g1/idea400/Clapping_during_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Clapping_during_walking",
+      "frames_raw": 115,
+      "fps_raw": 30.0,
+      "sha256_raw": "21d7aff6d978e7d312b8bbb794542757334e51cbd33f39c30285c2252961cc79",
+      "zip_crc32": 2992711293
+    },
+    {
+      "archive_path": "data/g1/idea400/Hand_pockets_and_walking_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/Hand_pockets_and_walking_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "8f52dc9bd2bcccc15b8c6994e43134a2b67e32adaa38f7bb5fcce74c33897c27",
+      "zip_crc32": 696238953
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_10_and_walking_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_10_and_walking_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "aa8e3a70e127894afd2a64079e8e2f8916737a26f18cfd8ac11b7d5f706f4ea8",
+      "zip_crc32": 1504197191
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_10_and_walking_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_10_and_walking_at_the_same_time",
+      "frames_raw": 107,
+      "fps_raw": 30.0,
+      "sha256_raw": "f05b8701a1aabbfd2755bd0442e9d222b35081c1361fe008ff90ab3e13b6c926",
+      "zip_crc32": 155390911
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_11_and_walking_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_11_and_walking_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "c41bdf02df8d9cdca70658e2ea1ea5ad44885eb245db86c261c1625585b96e53",
+      "zip_crc32": 3726947100
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_11_and_walking_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_11_and_walking_at_the_same_time",
+      "frames_raw": 93,
+      "fps_raw": 30.0,
+      "sha256_raw": "8d5aab213ffac9e76fefbd2756f92fc87a7637b3edd2ddd718bcdf1eb7b69931",
+      "zip_crc32": 2756518488
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_12_and_walking_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_12_and_walking_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "88607c8930060db5fc9228ab12f28f85d38d6a54ed9fb3d1c087a623a0c4a7f2",
+      "zip_crc32": 869960669
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_12_and_walking_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_12_and_walking_at_the_same_time",
+      "frames_raw": 85,
+      "fps_raw": 30.0,
+      "sha256_raw": "95b5b8741215bc3d08060d6547b87ed886b7b9503938e7681abdf18eaf5df42c",
+      "zip_crc32": 3285348832
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_12_while_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_12_while_walking",
+      "frames_raw": 113,
+      "fps_raw": 30.0,
+      "sha256_raw": "87161ac63d4ddc3cd0c43993552763dd74d48dbb2ea6041ada4873dd1ea32844",
+      "zip_crc32": 1521447854
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_13_while_walking_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_13_while_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "8743ac1b9d7eee31279ce3b8cd7945539dbba9237555897efca0fb59fe4a04cc",
+      "zip_crc32": 3171038127
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_13_while_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_13_while_walking_1",
+      "frames_raw": 101,
+      "fps_raw": 30.0,
+      "sha256_raw": "5187ac089670bdd1d58b2c53c3aa5e85c86fbf333471c2007e00641ca08add45",
+      "zip_crc32": 3870727941
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_13_while_walking_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_13_while_walking_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "bcc1883daf331030182683d3ecca3d1d3c4e465e4a1e3d4d96dba9bc457225e1",
+      "zip_crc32": 190666301
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_13_while_walking_2_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_13_while_walking_2",
+      "frames_raw": 108,
+      "fps_raw": 30.0,
+      "sha256_raw": "7800323a80f666fc09befbf362f9bd3b2d481e9766ab70cb8f27e969a3b72372",
+      "zip_crc32": 2600494602
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_13_while_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_13_while_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "313434cc281c5b2d15a3636ec40a262e6c3fa9995efa6b9a312ad8c7d6045d8b",
+      "zip_crc32": 2483307744
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_13_while_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_13_while_walking",
+      "frames_raw": 117,
+      "fps_raw": 30.0,
+      "sha256_raw": "64146b18222d44645bf29abea60240466b9f6e3b5d69c1da6a3b402093e40f68",
+      "zip_crc32": 1686781679
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_14_and_walking_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_14_and_walking_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "da5722e1af1004ca2ee6e7e8183e263eee87375ec233d89d7f3f9758db2dd2c2",
+      "zip_crc32": 1468615061
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_14_and_walking_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_14_and_walking_at_the_same_time",
+      "frames_raw": 80,
+      "fps_raw": 30.0,
+      "sha256_raw": "e885d566029cfe67a9a180c2b14652dc604ce219f6b1ebcea81741e86868a297",
+      "zip_crc32": 941477626
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_14_during_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_14_during_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "c429014b1605a752d4253df0869bfc9346786214c8eb1a56ae4ffbbc64cf2d1a",
+      "zip_crc32": 306211791
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_14_during_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_14_during_walking",
+      "frames_raw": 103,
+      "fps_raw": 30.0,
+      "sha256_raw": "47d1b16c605cf4c5b76981847238f002d2f287850a0f2efab0b75c3168e928c6",
+      "zip_crc32": 442882675
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_14_while_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_14_while_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "ad49a749bc59baa35c55aa70bbc47b0fd314b2046cac649fc6f83c4e1441d9fb",
+      "zip_crc32": 648677596
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_14_while_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_14_while_walking",
+      "frames_raw": 69,
+      "fps_raw": 30.0,
+      "sha256_raw": "7c7ed1e791d080be8a14e5c10f55613e975fc8b14cb1d073a7ab64cd799dd611",
+      "zip_crc32": 2003290635
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_15_during_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_15_during_walking_1",
+      "frames_raw": 91,
+      "fps_raw": 30.0,
+      "sha256_raw": "35abf9acae18b47dbff3ef82cbf2534a8233a7840b1705078de466240e5e6658",
+      "zip_crc32": 1362904622
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_15_during_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_15_during_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "274997adfcfa47b303e6f2650dbba4926a3c0040b3eafe3a8860f5fb3c035a30",
+      "zip_crc32": 1026428339
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_15_during_walking_clip1_chunk_0002.npy",
+      "source_group": "idea400/Number_15_during_walking",
+      "frames_raw": 44,
+      "fps_raw": 30.0,
+      "sha256_raw": "9a597be010a8b499f45bae9dd087bbac7b1d87ef198ed8da22ab7fce9b7a121c",
+      "zip_crc32": 1848800880
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_1_during_walking_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_1_during_walking_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "a1446acc1d9d95f1b90a84c6d73d0c874af9fa0c297a82d6de4212dfebc4eec6",
+      "zip_crc32": 1971846464
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_1_during_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_1_during_walking",
+      "frames_raw": 69,
+      "fps_raw": 30.0,
+      "sha256_raw": "32a1187e9da67d4da5e3d7b483a77af703a762d0f102665012990f281aaedd41",
+      "zip_crc32": 1892495904
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_1_while_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_1_while_walking_1",
+      "frames_raw": 82,
+      "fps_raw": 30.0,
+      "sha256_raw": "bba64da49f7646678c76e7ea4bfb67633b1bdc3a0b312b1ea8047d2457ff59f7",
+      "zip_crc32": 1297229883
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_2_and_walking_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_2_and_walking_at_the_same_time_1",
+      "frames_raw": 94,
+      "fps_raw": 30.0,
+      "sha256_raw": "007ccc03dcd5045adcae017ecc52738ed3f8d40455068cf1b6e551567064231d",
+      "zip_crc32": 1995804770
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_2_and_walking_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_2_and_walking_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "3dc7bb8daade980f71c83286319fa929db36d7e4725ba44ae98bd21164ce277e",
+      "zip_crc32": 2973976221
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_2_and_walking_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_2_and_walking_at_the_same_time",
+      "frames_raw": 112,
+      "fps_raw": 30.0,
+      "sha256_raw": "2f23fd3eb55a8ecc73bdc89977762f9df3f491943e7eeadad5fc2f30c6b56392",
+      "zip_crc32": 3519552789
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_2_during_walking_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_2_during_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "c0a746c2a0cafb1aec264647e1b6c95239cf7ff2a8f9d76e19b02463c47a330a",
+      "zip_crc32": 1146193061
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_2_during_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_2_during_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "32ff23b662f852c3cfa06b1a8507b7d6668e17019849ced3d8ff405005b45b40",
+      "zip_crc32": 754135931
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_2_during_walking_1_clip1_chunk_0002.npy",
+      "source_group": "idea400/Number_2_during_walking_1",
+      "frames_raw": 31,
+      "fps_raw": 30.0,
+      "sha256_raw": "74c63513a13e2a1885a219b5ecee04dd3b7200baadde5e7c7a4b0307d2defd1e",
+      "zip_crc32": 3259406556
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_2_during_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_2_during_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "06949e9b262dd7995d5a48ce19e29b0f613335760c57f9e74a463cf42318b1b6",
+      "zip_crc32": 3942489548
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_2_during_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_2_during_walking",
+      "frames_raw": 126,
+      "fps_raw": 30.0,
+      "sha256_raw": "fcbd4e65abb6fb23986b1f6c5251f182c443b6d78d4e78defcdc7056b45d7648",
+      "zip_crc32": 2529249088
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_2_while_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_2_while_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "9bb830a9f9829dcc9968eddcd20e50e99f382696f4fd7b80784aa08ed18ee9df",
+      "zip_crc32": 89678791
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_2_while_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_2_while_walking",
+      "frames_raw": 47,
+      "fps_raw": 30.0,
+      "sha256_raw": "5df215f45c30e3b9ebe9ac77fc7c211e861968aec0b9bf01b17983d5e2fdd2f2",
+      "zip_crc32": 1129628797
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_3_and_walking_at_the_same_time_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_3_and_walking_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "4957539650e74c66d99ffc888b03ac31514551cdf1109dfed776cfcfd1483d04",
+      "zip_crc32": 974673258
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_3_and_walking_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_3_and_walking_at_the_same_time_1",
+      "frames_raw": 111,
+      "fps_raw": 30.0,
+      "sha256_raw": "305293797229f8436fb27c26e2fede5c3b2af7a024c1fee0ae3a2d0f1f268645",
+      "zip_crc32": 2695724688
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_3_and_walking_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_3_and_walking_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "b26fd98818d1835639a8651a9a5571b6d9fe54020f42ab4266574bcb9e791993",
+      "zip_crc32": 1568090908
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_3_and_walking_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_3_and_walking_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "06883bee5321cc562a0f9c07a79eb08d434516c5a1e663790e252e1cfe7e404a",
+      "zip_crc32": 131945449
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_3_and_walking_at_the_same_time_clip1_chunk_0002.npy",
+      "source_group": "idea400/Number_3_and_walking_at_the_same_time",
+      "frames_raw": 35,
+      "fps_raw": 30.0,
+      "sha256_raw": "d23dd7fecc1d54c4f7852d2573148d2dd24fafd8a031e73e712d7a7cc16dfc20",
+      "zip_crc32": 2378085656
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_3_during_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_3_during_walking_1",
+      "frames_raw": 114,
+      "fps_raw": 30.0,
+      "sha256_raw": "ce444ba2d1d35372a98fd410d89e4f27986754ce6cd5cbf6a9ed47a489e7fb74",
+      "zip_crc32": 752806580
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_3_during_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_3_during_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "b34e6a0b8ad544d6043007971686d7525cd7d00abcdbe0be4d3f5400f4f9bcf2",
+      "zip_crc32": 744325535
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_3_during_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_3_during_walking",
+      "frames_raw": 68,
+      "fps_raw": 30.0,
+      "sha256_raw": "3aa40355cbc2ca357c22f7686c03b2315b61f61e1fd999922109af147156527a",
+      "zip_crc32": 2669984878
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_3_while_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_3_while_walking",
+      "frames_raw": 76,
+      "fps_raw": 30.0,
+      "sha256_raw": "5940406b27970f63af2f4734a7a875d737cd972f5b05bdecdf5aea8afc628f75",
+      "zip_crc32": 265492227
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_4_and_walking_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_4_and_walking_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "08ff90e28abcba547d4fb77e78b6898d7d794c06e4ef4ce1b880d72a1cf80397",
+      "zip_crc32": 1124710374
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_4_and_walking_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_4_and_walking_at_the_same_time",
+      "frames_raw": 68,
+      "fps_raw": 30.0,
+      "sha256_raw": "0197657e2b3e093e9ea2f9abef5e44098a98cdc3b7bcb8333da9354c891115e2",
+      "zip_crc32": 323875364
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_4_during_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_4_during_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "6780d3376e43ff65d627194b3b0e0c76382173c1f131e3e54d7f213062396e69",
+      "zip_crc32": 3738283924
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_4_during_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_4_during_walking",
+      "frames_raw": 102,
+      "fps_raw": 30.0,
+      "sha256_raw": "86a92bc33a848845b45517690d0f6f21e22b468f1e9ca51f5cc65573338932cb",
+      "zip_crc32": 369292003
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_4_while_walking_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_4_while_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "d139d4a0dee9536751ef1e94a54a8ce02aa658a7c2df587ed71787e2282b486a",
+      "zip_crc32": 1724403487
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_4_while_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_4_while_walking_1",
+      "frames_raw": 118,
+      "fps_raw": 30.0,
+      "sha256_raw": "f177c47d5ddc72afee1a59205fbf92e232cda161f6135ad6e1770b2dd7b80d81",
+      "zip_crc32": 3465898563
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_4_while_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_4_while_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "97aeafaa0fb889fc191d4c468bb3a2c58eb6659e89c3b83a64a38de4ed0c19ac",
+      "zip_crc32": 3140248842
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_4_while_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_4_while_walking",
+      "frames_raw": 93,
+      "fps_raw": 30.0,
+      "sha256_raw": "9d48670fcc5a90e8d0ac25bfe8953859b236c32957950fc4795b57b615a7ea53",
+      "zip_crc32": 564411605
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_5_during_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_5_during_walking_1",
+      "frames_raw": 99,
+      "fps_raw": 30.0,
+      "sha256_raw": "d7e760376237c904c17ee8a8534c9f4a99a06c05bf9d16c5f10bf20be3ff4366",
+      "zip_crc32": 2384817802
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_5_during_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_5_during_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "e653f47c284bdcdb838c869cbd45f1ea0f780721795d65604ddbfb5ab773e827",
+      "zip_crc32": 147271448
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_5_during_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_5_during_walking",
+      "frames_raw": 96,
+      "fps_raw": 30.0,
+      "sha256_raw": "c2149fb51fe19faca5e11abae0940ec7f6438f396c3b3f6abbfce2f6d9f90267",
+      "zip_crc32": 2057403557
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_6_and_walking_at_the_same_time_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_6_and_walking_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "2e0e0ffcf03ccd6c8ef96b85f860346c4d2a41f319850db8d5e4410cdf06fa02",
+      "zip_crc32": 167457799
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_6_and_walking_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_6_and_walking_at_the_same_time_1",
+      "frames_raw": 75,
+      "fps_raw": 30.0,
+      "sha256_raw": "8a0ff03ab4996bc3f17fd6f030d2ea539fa8b0ea79f2431fc8783c902a3fc4ac",
+      "zip_crc32": 583418216
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_6_and_walking_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_6_and_walking_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "932cf72db548a0f94d34e0b8e130e4676d8f474601455c1d532ee539863f30a3",
+      "zip_crc32": 1746306048
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_6_and_walking_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_6_and_walking_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "cf2d3012a3cfd4fa1b55074dc54e682ce62554fbfaeac65faf7f52801c2eb20f",
+      "zip_crc32": 2957436934
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_6_and_walking_at_the_same_time_clip1_chunk_0002.npy",
+      "source_group": "idea400/Number_6_and_walking_at_the_same_time",
+      "frames_raw": 40,
+      "fps_raw": 30.0,
+      "sha256_raw": "7580d81b7b8b4c158c5ac7776768722859cd5baab7da54065894404f37f9b6bb",
+      "zip_crc32": 3108376677
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_6_during_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_6_during_walking",
+      "frames_raw": 108,
+      "fps_raw": 30.0,
+      "sha256_raw": "85af4e2eec3270613bfa6d7b2f47ea4f36b8253d53aadef1c7ad5822c9fc9fbf",
+      "zip_crc32": 2728831558
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_7_during_walking_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_7_during_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "9fefcfbd93f4453666fd3c68535f25a4b9afd4107ca4154ed6cb2500c1203296",
+      "zip_crc32": 3564997319
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_7_while_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_7_while_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "0e83d1f4ac86e5a8b26e9bd243350ab2c9a85aebe6601adbfeacb95416c443ae",
+      "zip_crc32": 3503478012
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_7_while_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_7_while_walking",
+      "frames_raw": 85,
+      "fps_raw": 30.0,
+      "sha256_raw": "aeed3ca854b15df0b45dc630e26a1102a3f3b88bcc802693fe59a589f6ed8aee",
+      "zip_crc32": 3835231445
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_8_and_walking_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_8_and_walking_at_the_same_time",
+      "frames_raw": 101,
+      "fps_raw": 30.0,
+      "sha256_raw": "99d15c62e68c29f93ba049858fe36dcaa4071f13705b70d84bf532527cd87f3e",
+      "zip_crc32": 673071088
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_8_during_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_8_during_walking_1",
+      "frames_raw": 123,
+      "fps_raw": 30.0,
+      "sha256_raw": "e03637d720dfac28cf5e06a4cfd265af22b0dd7a95dcfb91935d4019bbc27e1e",
+      "zip_crc32": 619280126
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_9_while_walking_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_9_while_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "b27d767012ab7f98d9deadc73f0f17c1e10b55afb0307d504a5cd57002519b20",
+      "zip_crc32": 1717414118
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_9_while_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Number_9_while_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "246cee965a56b13a5c24fe64206f637e36bc797b85a5ee66c60617d930fc489d",
+      "zip_crc32": 2204454531
+    },
+    {
+      "archive_path": "data/g1/idea400/Number_9_while_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Number_9_while_walking",
+      "frames_raw": 73,
+      "fps_raw": 30.0,
+      "sha256_raw": "2b26b29854b71580c81ea2ab2e60f16c6161687e9a7bde5617cd784c86991279",
+      "zip_crc32": 186817853
+    },
+    {
+      "archive_path": "data/g1/idea400/Pointing_at_something_during_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Pointing_at_something_during_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "cbca3e01b26f8738306962006bc2ff4f440dfa2866b2914c884e80e4268d045c",
+      "zip_crc32": 1116659762
+    },
+    {
+      "archive_path": "data/g1/idea400/Pointing_at_something_during_walking_clip1_chunk_0002.npy",
+      "source_group": "idea400/Pointing_at_something_during_walking",
+      "frames_raw": 47,
+      "fps_raw": 30.0,
+      "sha256_raw": "b561c83dddf955bc2ae2817557228f7e3a62582bcfc07721eda4faac213a1653",
+      "zip_crc32": 1959495633
+    },
+    {
+      "archive_path": "data/g1/idea400/Pointing_at_something_while_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Pointing_at_something_while_walking",
+      "frames_raw": 127,
+      "fps_raw": 30.0,
+      "sha256_raw": "b1db8b374b94056827ca6fc1f00d64f9f861a6bab16622a041dd818af993525e",
+      "zip_crc32": 608688274
+    },
+    {
+      "archive_path": "data/g1/idea400/Pointing_the_maze_and_walking_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/Pointing_the_maze_and_walking_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "d1a0f72d28778dccdec273e0c0d430d009fa57cee63df65ad9edbce22f2d0483",
+      "zip_crc32": 4240955908
+    },
+    {
+      "archive_path": "data/g1/idea400/Pointing_the_maze_and_walking_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/Pointing_the_maze_and_walking_at_the_same_time",
+      "frames_raw": 78,
+      "fps_raw": 30.0,
+      "sha256_raw": "6141282c5e433ee4199a990e7878688712df4381799851ab5e0e66da797b553c",
+      "zip_crc32": 3518884948
+    },
+    {
+      "archive_path": "data/g1/idea400/Pointing_the_maze_during_walking_3_clip1_chunk_0000.npy",
+      "source_group": "idea400/Pointing_the_maze_during_walking_3",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "c451a89e7b90e889102fa49cedff63c220433cc6943ed68c935676be2c4c5f9e",
+      "zip_crc32": 734966955
+    },
+    {
+      "archive_path": "data/g1/idea400/Pointing_the_maze_during_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Pointing_the_maze_during_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "4abee3073113e53b30d207d2bc651462a37f95fe5b52c66a07170327d7055d13",
+      "zip_crc32": 2389689000
+    },
+    {
+      "archive_path": "data/g1/idea400/Pointing_the_maze_while_walking_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Pointing_the_maze_while_walking_1",
+      "frames_raw": 125,
+      "fps_raw": 30.0,
+      "sha256_raw": "feb0c8cb16965ae49b353ec0651d1af68fdc5d71c44aa3e384574a7e1b2b7d72",
+      "zip_crc32": 505125905
+    },
+    {
+      "archive_path": "data/g1/idea400/Pointing_the_maze_while_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Pointing_the_maze_while_walking",
+      "frames_raw": 134,
+      "fps_raw": 30.0,
+      "sha256_raw": "c25d95d4a30a78827469a6afe3d369b8bd87045422a57c286a0bbd3da791f6cf",
+      "zip_crc32": 173337527
+    },
+    {
+      "archive_path": "data/g1/idea400/Pointing_while_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Pointing_while_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "eb5fd5365909a69dc8d5970dbfa132337fad46adae08017a955c13c239f6487f",
+      "zip_crc32": 300574128
+    },
+    {
+      "archive_path": "data/g1/idea400/Salute_and_walking_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Salute_and_walking_at_the_same_time_1",
+      "frames_raw": 53,
+      "fps_raw": 30.0,
+      "sha256_raw": "5bbe4caa4b4572a538900356f48651a3486e6ebf309b7a0ea75761449966eb3e",
+      "zip_crc32": 2070400163
+    },
+    {
+      "archive_path": "data/g1/idea400/Salute_and_walking_at_the_same_time_2_clip1_chunk_0001.npy",
+      "source_group": "idea400/Salute_and_walking_at_the_same_time_2",
+      "frames_raw": 132,
+      "fps_raw": 30.0,
+      "sha256_raw": "7e76ca518cfa901da3d8dc1c71f753fdaa68617c4aa9af79eb95704154da79bd",
+      "zip_crc32": 3943670707
+    },
+    {
+      "archive_path": "data/g1/idea400/Salute_and_walking_at_the_same_time_3_clip1_chunk_0000.npy",
+      "source_group": "idea400/Salute_and_walking_at_the_same_time_3",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "f764dd71e58d4bd774a87deb7071748f92ebb2d9136dd7fdd63112a0d0846f11",
+      "zip_crc32": 1712998998
+    },
+    {
+      "archive_path": "data/g1/idea400/Salute_and_walking_at_the_same_time_3_clip1_chunk_0001.npy",
+      "source_group": "idea400/Salute_and_walking_at_the_same_time_3",
+      "frames_raw": 52,
+      "fps_raw": 30.0,
+      "sha256_raw": "ae79142a2246906403008d6c0c1af0ee477f69e8efd7e9b6840e387b4af4a7bb",
+      "zip_crc32": 4214952858
+    },
+    {
+      "archive_path": "data/g1/idea400/Salute_and_walking_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/Salute_and_walking_at_the_same_time",
+      "frames_raw": 127,
+      "fps_raw": 30.0,
+      "sha256_raw": "4add928c594b2201bcc208d162aa6dd88179586b17341905267c4ccbcf077215",
+      "zip_crc32": 226530311
+    },
+    {
+      "archive_path": "data/g1/idea400/Salute_during_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Salute_during_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "ac9455cbf5e2d394fe851e4f3abf44d70f7a36920ebaf179189001a69ee5b958",
+      "zip_crc32": 2007822775
+    },
+    {
+      "archive_path": "data/g1/idea400/Salute_during_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Salute_during_walking",
+      "frames_raw": 119,
+      "fps_raw": 30.0,
+      "sha256_raw": "f0a22c87df0d5304be19ef86665d30c6bf29cefbe2e85a6f267ebab9653a0488",
+      "zip_crc32": 638350548
+    },
+    {
+      "archive_path": "data/g1/idea400/Salute_while_walking_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Salute_while_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "9a22fd1eeabc762a310e0a017253e08e268024b1e2e8b68d333b7700a7b9ea4e",
+      "zip_crc32": 3793044592
+    },
+    {
+      "archive_path": "data/g1/idea400/Salute_while_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Salute_while_walking_1",
+      "frames_raw": 45,
+      "fps_raw": 30.0,
+      "sha256_raw": "bcd5733b0de81e52b63cbd9f72f929893005b77d2716cb3160a5c5c57b1c3a38",
+      "zip_crc32": 3480898328
+    },
+    {
+      "archive_path": "data/g1/idea400/Salute_while_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Salute_while_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "e3195ae6dc7036aab22e51c0ede5d6a9a1f3d8824834faa3e94c0ef5d666439e",
+      "zip_crc32": 3908945697
+    },
+    {
+      "archive_path": "data/g1/idea400/Salute_while_walking_clip1_chunk_0002.npy",
+      "source_group": "idea400/Salute_while_walking",
+      "frames_raw": 32,
+      "fps_raw": 30.0,
+      "sha256_raw": "7fc45353c1411eaad698dde9cc61dc0f511b21a7b2739cdc8eccefb075e67d0b",
+      "zip_crc32": 2238526331
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Clapping_and_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Clapping_and_walking_1",
+      "frames_raw": 67,
+      "fps_raw": 30.0,
+      "sha256_raw": "f2eb2215699c8b8c7d2c25c279906745e4fc217544e2cdb211a45ed0f498906d",
+      "zip_crc32": 4220572263
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Clapping_and_walking_2_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Clapping_and_walking_2",
+      "frames_raw": 96,
+      "fps_raw": 30.0,
+      "sha256_raw": "fa55b8d21778a6e6107c74f3a5a76550fdb14ff8efccc99a26ce435b1aef269d",
+      "zip_crc32": 681041951
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Clapping_and_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Clapping_and_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "5eef2c7294fe48357ebb6a7b57ca7bf521831e4a5dbad1798a7a9197cd5c0815",
+      "zip_crc32": 2859480933
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Clapping_and_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Clapping_and_walking",
+      "frames_raw": 98,
+      "fps_raw": 30.0,
+      "sha256_raw": "fc0509baa623ec4f145332d53f65a41d11ed7eb41791cb5870a0059b0259e2e2",
+      "zip_crc32": 2946427651
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Hand_pockets_and_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Hand_pockets_and_walking_1",
+      "frames_raw": 107,
+      "fps_raw": 30.0,
+      "sha256_raw": "3c3e80077ce4b23ded6d670f109019aa130c14bd127a046d74513c379edbfe31",
+      "zip_crc32": 869541188
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Hand_pockets_and_walking_clip1_chunk_0002.npy",
+      "source_group": "idea400/Simultaneously_Hand_pockets_and_walking",
+      "frames_raw": 115,
+      "fps_raw": 30.0,
+      "sha256_raw": "6efb9974851e84cdce5a10db1d88f8caf09940e494ed4e03cee7e23a48cb77a8",
+      "zip_crc32": 1431786218
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_10_and_walking_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Number_10_and_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "494308bc01241fa8c3d02bcd6b0ae62b6aa234fd8caca99ccac6904514bb107e",
+      "zip_crc32": 2368266633
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_10_and_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Number_10_and_walking_1",
+      "frames_raw": 71,
+      "fps_raw": 30.0,
+      "sha256_raw": "55f570f3a28d74174c47d1527afd1045a42db793ead1523387e3249d5d7a8436",
+      "zip_crc32": 930262734
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_10_and_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Number_10_and_walking",
+      "frames_raw": 101,
+      "fps_raw": 30.0,
+      "sha256_raw": "b6543f3776c2a5d1fb9847111f81372d4b48ec439a30b0d355ff7e719793b153",
+      "zip_crc32": 2351757352
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_11_and_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Number_11_and_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "e3cc6e041b53826c184f0f6b953beb6b4323e00db5108fbedc479c42e30c1ddf",
+      "zip_crc32": 2108821789
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_13_and_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Number_13_and_walking",
+      "frames_raw": 81,
+      "fps_raw": 30.0,
+      "sha256_raw": "0667ae7a18c2962fb79e7b402488c52d19be0a199b4a870f0746abb6450383de",
+      "zip_crc32": 4034624503
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_1_and_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Number_1_and_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "329f0b378866d4cc589727267e9ee385f6cc94efbe1e5a49d8287fa88c31b2cb",
+      "zip_crc32": 487081841
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_1_and_walking_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Number_1_and_walking_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "517b7816eec13c77ca74d7d3d9b7c696f6026cf5f736d1d6ef74c37e49bc3939",
+      "zip_crc32": 1753315021
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_1_and_walking_2_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Number_1_and_walking_2",
+      "frames_raw": 39,
+      "fps_raw": 30.0,
+      "sha256_raw": "7aeabc3a82d9f1fa6da855189abf67f6642265a893e60de553ce07715b4bca7e",
+      "zip_crc32": 1643017896
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_1_and_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Number_1_and_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "2e2db8b99fe83da421033799f4b83db1f9866eaef92199b096d5397dd2f421df",
+      "zip_crc32": 1313240407
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_1_and_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Number_1_and_walking",
+      "frames_raw": 101,
+      "fps_raw": 30.0,
+      "sha256_raw": "126fab506977d48d4c059889d4d8489def8355c8e40a62e0752dfd60173fcedd",
+      "zip_crc32": 1708643572
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_2_and_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Number_2_and_walking_1",
+      "frames_raw": 55,
+      "fps_raw": 30.0,
+      "sha256_raw": "6fa5295e2419d71b6aa618a454acb5616efca42ad70e3ebb0b0ea36d3769b69a",
+      "zip_crc32": 422554522
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_2_and_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Number_2_and_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "78e355cb052ed14c2d1943e85e05197d84b10b4ea7a000f502002099d2e49f93",
+      "zip_crc32": 2352234395
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_2_and_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Number_2_and_walking",
+      "frames_raw": 123,
+      "fps_raw": 30.0,
+      "sha256_raw": "51b9120558c153faa3609ff65b8425f0b4fa3f2b80e8ce7106bfa02f3335ef08",
+      "zip_crc32": 1945632319
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_6_and_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Number_6_and_walking",
+      "frames_raw": 124,
+      "fps_raw": 30.0,
+      "sha256_raw": "2694e42c2f907f10f7bb082bf3de059194bfcd62a6da285ddc251602320bf0cd",
+      "zip_crc32": 1627273236
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_7_and_walking_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Number_7_and_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "1100b36bd2162e1cc84277b407cb4f9a002074dd38199a3419759ec1e80116d2",
+      "zip_crc32": 1617093032
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_7_and_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Number_7_and_walking_1",
+      "frames_raw": 99,
+      "fps_raw": 30.0,
+      "sha256_raw": "34902ffaa0bd84789a5a2064026ce57a16a42ecd3c5157a4bbac2783035ee0c5",
+      "zip_crc32": 288574301
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Number_7_and_walking_2_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Number_7_and_walking_2",
+      "frames_raw": 54,
+      "fps_raw": 30.0,
+      "sha256_raw": "4d6d4733decc512a38f1030d390b369458fd1bd1c6b04941ed51b29fab7d4636",
+      "zip_crc32": 1446971031
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Pointing_at_something_and_walking_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Pointing_at_something_and_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "99a675c2f4111a95a6b0ac7c503e53720a4c2d119649cd9ba8f4b22595c8ae21",
+      "zip_crc32": 1660731640
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Pointing_at_something_and_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Pointing_at_something_and_walking_1",
+      "frames_raw": 83,
+      "fps_raw": 30.0,
+      "sha256_raw": "9b1d0657bee2e0fb01bc0be23474057c3fd959fe44ae673d5c4cec74cfdef6cf",
+      "zip_crc32": 3461691478
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Pointing_at_something_and_walking_2_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Pointing_at_something_and_walking_2",
+      "frames_raw": 119,
+      "fps_raw": 30.0,
+      "sha256_raw": "ce79cd7c9c0443c12db13a656626f7147281a7b376f43ae52674c2244488499d",
+      "zip_crc32": 1264024918
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Pointing_the_maze_and_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Pointing_the_maze_and_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "67d711f18ea10559a6ee46c16da43a7b851659b68c154d04ff17da8c45576396",
+      "zip_crc32": 1601160107
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Pointing_the_maze_and_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Pointing_the_maze_and_walking",
+      "frames_raw": 100,
+      "fps_raw": 30.0,
+      "sha256_raw": "29a48d0bd7abbcdf7c7a82f5c42c577b3ed06c92bb6318014f92f5612bb3c9f8",
+      "zip_crc32": 2596352268
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Waving_and_walking_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Waving_and_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "70a98b3de40a6b6b5ac59b64a3bfbc56e0fd4cff41d95b3894e245e9dd92626c",
+      "zip_crc32": 10986652
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Waving_and_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Waving_and_walking_1",
+      "frames_raw": 114,
+      "fps_raw": 30.0,
+      "sha256_raw": "b313179380c75d64f02300d79688f39efacaeb0aa0f5ef5b123a6782d8e395b6",
+      "zip_crc32": 2370408741
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Waving_and_walking_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Waving_and_walking_2",
+      "frames_raw": 127,
+      "fps_raw": 30.0,
+      "sha256_raw": "94401d30179fa2c63a4e5e8de55b24f2056b1d44c050405f9b5e10c9627fb805",
+      "zip_crc32": 2546845540
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Waving_and_walking_3_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Waving_and_walking_3",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "acfb2e160807790175c4e0f9663d09cba284c5ac56442f770af01e80bc02a557",
+      "zip_crc32": 3704165351
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Waving_and_walking_3_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Waving_and_walking_3",
+      "frames_raw": 41,
+      "fps_raw": 30.0,
+      "sha256_raw": "fafad67cfe493d58a6690890d381f87023dcb40c544b20ea325c782b3f04d6ee",
+      "zip_crc32": 2382094172
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Waving_and_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Waving_and_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "f1bb793f847ebcc1a89d75da61060a147ccff3195140a865b3f722060bf223f0",
+      "zip_crc32": 2492891349
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Waving_and_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_Waving_and_walking",
+      "frames_raw": 48,
+      "fps_raw": 30.0,
+      "sha256_raw": "bd328c47df803dc7d614b9d6978498d0dd7a024ff38a21c53ec35483efa23b3f",
+      "zip_crc32": 2681199734
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_Waving_and_walking_clip2_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_Waving_and_walking",
+      "frames_raw": 85,
+      "fps_raw": 30.0,
+      "sha256_raw": "7bd59496445465850a1462553ba6918fbde79882ee1cf9cc23c02a443a7bfe7d",
+      "zip_crc32": 1380269760
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Arm_Swing_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Arm_Swing",
+      "frames_raw": 125,
+      "fps_raw": 30.0,
+      "sha256_raw": "d538ffb1d556b0a04a184cc859850c77339955ce71ce725215abe6447ff69882",
+      "zip_crc32": 1424703561
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Clapping_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Clapping_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "796a78291d79ca1d3c9d0f79b9b3f7bbe3133da85bd0b8c376d072ef0eca607c",
+      "zip_crc32": 3445237394
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Clapping_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Clapping",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "151eb0e6c3b106716d32baa8bce9da22f018a548907c32767c83e753eb38a367",
+      "zip_crc32": 2389441360
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Clapping_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Clapping",
+      "frames_raw": 93,
+      "fps_raw": 30.0,
+      "sha256_raw": "36519b15081d2580cb32af21d40bd21970f6a578c051ce8c286400b7a36f3436",
+      "zip_crc32": 3274880512
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Hand_pockets_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Hand_pockets_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "58ca342dadc5c6f7482bf3ec66432245164ce7d7bf8aaad58cecb6bc5c1159fc",
+      "zip_crc32": 2034328764
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Hand_pockets_2_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Hand_pockets_2",
+      "frames_raw": 110,
+      "fps_raw": 30.0,
+      "sha256_raw": "4df430050cffd7755b5d511719ffeadc53a73d531b97660d82a6c208188ea04a",
+      "zip_crc32": 160258001
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Hand_pockets_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Hand_pockets",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "eb409a1fe3bd901c188714f74c7c45924f5b3e9a51d5f0eb3e20b247bf94cab3",
+      "zip_crc32": 3524832231
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Hand_pockets_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Hand_pockets",
+      "frames_raw": 58,
+      "fps_raw": 30.0,
+      "sha256_raw": "5a0f4ebbf7c42b0d180dcf4cb1ea5eeea0d459b110f58e13188b87ce11091b2d",
+      "zip_crc32": 3862590068
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_11_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_11_1",
+      "frames_raw": 118,
+      "fps_raw": 30.0,
+      "sha256_raw": "884249c8ab03ec9b3336dfc22a3594a5618ff061e414eee545b677ba08754537",
+      "zip_crc32": 2995385154
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_11_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_11",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "5e00483f8d4744cb2c9fb68283984a04b0f5441f6a43eddd18ce9e810f2e4703",
+      "zip_crc32": 3427945265
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_11_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_11",
+      "frames_raw": 99,
+      "fps_raw": 30.0,
+      "sha256_raw": "858bbf4db7cf2af2d558a9f17d0aafb62001423b404c8220c45f3f0b4aa58b1a",
+      "zip_crc32": 937875841
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_12_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_12_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "e2c8128303b1aed32b3309596c3c1c685a18cedabb7483a627c983a56a37c423",
+      "zip_crc32": 2811055476
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_12_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_12_1",
+      "frames_raw": 56,
+      "fps_raw": 30.0,
+      "sha256_raw": "7b3aaf21558c77960610b2823cdfa2e24d5f85e4911bda08574214af19f905d8",
+      "zip_crc32": 2812691070
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_12_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_12",
+      "frames_raw": 100,
+      "fps_raw": 30.0,
+      "sha256_raw": "8a528df50bf03ce2628a0a39b5eaef763bc6622974c715fd1ebd70c9040a0af5",
+      "zip_crc32": 792272797
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_13_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_13_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "bf75ea37ac97e3f4d91962eb4b990304f45067478b3181b42a19952a3bec9a02",
+      "zip_crc32": 624460082
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_13_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_13_1",
+      "frames_raw": 85,
+      "fps_raw": 30.0,
+      "sha256_raw": "0739af75bd67ad7194c5b89b11654acc8c9a75f947aeb2080f72e1146231f4f8",
+      "zip_crc32": 1490451006
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_13_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_13",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "a177c054b041d7ee2dcdd79dccc488688b28f95cdd0155535b74f37920fb89c1",
+      "zip_crc32": 1276104689
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_13_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_13",
+      "frames_raw": 91,
+      "fps_raw": 30.0,
+      "sha256_raw": "5b676830133823277005d4eee5136013bce1a63352a397348b019b501a656e46",
+      "zip_crc32": 1923137843
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_14_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_14_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "51307424139c3957847048d2e6e897117dca7dc7480d018648e24418f3874bbd",
+      "zip_crc32": 1190261354
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_14_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_14_1",
+      "frames_raw": 94,
+      "fps_raw": 30.0,
+      "sha256_raw": "e292c135bd161e0db7d01ac371c2fc67fd69f485fe178f598deef90ccea7db68",
+      "zip_crc32": 2994154238
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_14_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_14",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "eca05006212ea67efeb0d65726e068242f23de1bd7b5ef9dc2ab2c59d44310d8",
+      "zip_crc32": 546129888
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_14_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_14",
+      "frames_raw": 75,
+      "fps_raw": 30.0,
+      "sha256_raw": "47f4353b67aebf172c3bca2d57b761cbdc91396138d88e83a454aaac2fb76e86",
+      "zip_crc32": 4198783995
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_4_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_4",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "b44b9544d9fd458a309180f9c202a3cbfb504a8723bdca23618dd1cab84ce068",
+      "zip_crc32": 2839089165
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_4_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_4",
+      "frames_raw": 93,
+      "fps_raw": 30.0,
+      "sha256_raw": "1e2e1a360cc4ad0a36da09157269d86fadfbc480dca80b19a9619cd8bdf97cd4",
+      "zip_crc32": 1889640512
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_5_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_5_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "80824f90029563d8a4fe019f02e687d7a9bf608a5d52ee0c1b4cc5c02ff91086",
+      "zip_crc32": 3237507756
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_5_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_5_1",
+      "frames_raw": 44,
+      "fps_raw": 30.0,
+      "sha256_raw": "ba281caba69c56c041bfaac8506fff1a85e053f6a216e1b93a7d010fff179b7e",
+      "zip_crc32": 374418483
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_5_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_5",
+      "frames_raw": 97,
+      "fps_raw": 30.0,
+      "sha256_raw": "4117dab17848d2c8ce324867551f0f1355f3386c9e44f1172a94b19034bff183",
+      "zip_crc32": 3882970341
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_6_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_6",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "708559e76affd671301c53785a155215b98f6d195430e60ab9a9863d9583b835",
+      "zip_crc32": 938474215
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_6_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_6",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "ffb12668a00a23268241fae852f2f3fa30192fd4a0b26daf95e4221cbe6d8e14",
+      "zip_crc32": 1230896209
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_6_clip1_chunk_0002.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_6",
+      "frames_raw": 63,
+      "fps_raw": 30.0,
+      "sha256_raw": "1790f2d8c9019a983e7d6a9b9e390122bec72c18b60161e6075cf1b74fcd5c0b",
+      "zip_crc32": 3704540621
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_7_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_7",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "49e93b9bdc27b04a5a1bc4fde37c0fb1454765bb092bdbbd745ee287c765b7c7",
+      "zip_crc32": 3416144219
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Number_7_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Number_7",
+      "frames_raw": 73,
+      "fps_raw": 30.0,
+      "sha256_raw": "358ef5fd4441d99849e0582549f4ff22520f0df740755a1d90191ebd2714bb2e",
+      "zip_crc32": 158869522
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Pointing_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Pointing",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "0679a1cad1e085fe2e95a9c4eb2805aad6ccc38dc56a36d89d83150ae5702146",
+      "zip_crc32": 1261821260
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Pointing_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Pointing",
+      "frames_raw": 127,
+      "fps_raw": 30.0,
+      "sha256_raw": "3da8ef1b3d584a0f7da868ca4722c69a847aca58bb399b3bd6b83f98b0105534",
+      "zip_crc32": 3528550540
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Salute_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Salute",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "cd8e518c9984140d2e2918738cf38d4df070e24a44a4073da4c1f9f4682719cc",
+      "zip_crc32": 889254549
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Salute_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Salute",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "acbf27f9412d158ddbc4b1cd5b98a06086a81b92206c4a64193dac617b0b1c42",
+      "zip_crc32": 2231143837
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Salute_clip1_chunk_0002.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Salute",
+      "frames_raw": 52,
+      "fps_raw": 30.0,
+      "sha256_raw": "9b8bae89f5585f16a858100adde34ce50c5416a0e118546a7e54d4aa95087040",
+      "zip_crc32": 4136549178
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Waving_clip1_chunk_0000.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Waving",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "9a48a13f1811e6586fa7a9cd2aeeb4326fcb82d1cc83cb709f266dcb7287df00",
+      "zip_crc32": 182284328
+    },
+    {
+      "archive_path": "data/g1/idea400/Simultaneously_walking_and_Waving_clip1_chunk_0001.npy",
+      "source_group": "idea400/Simultaneously_walking_and_Waving",
+      "frames_raw": 126,
+      "fps_raw": 30.0,
+      "sha256_raw": "409c36d6a38f1929688fb320dfb2d703923f5fad4e3ba48e94a8d3035ac13f90",
+      "zip_crc32": 4018948684
+    },
+    {
+      "archive_path": "data/g1/idea400/Waving_during_walking_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/Waving_during_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "2c9a739556168908f5a9b2edc960d41d7e4ad4442867ab2f2b07a9fd78b4462a",
+      "zip_crc32": 4158492502
+    },
+    {
+      "archive_path": "data/g1/idea400/Waving_during_walking_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/Waving_during_walking_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "55d94ca7b081e7319d76fb7112a60c0b6f2ad0d7056ef9ae7994a158c4991d8c",
+      "zip_crc32": 4053750030
+    },
+    {
+      "archive_path": "data/g1/idea400/Waving_during_walking_1_clip1_chunk_0002.npy",
+      "source_group": "idea400/Waving_during_walking_1",
+      "frames_raw": 56,
+      "fps_raw": 30.0,
+      "sha256_raw": "41a903cb66ee32224875c0465a77ffb59e6427e0a763ecd4fff498efc700202c",
+      "zip_crc32": 3575904747
+    },
+    {
+      "archive_path": "data/g1/idea400/Waving_during_walking_clip1_chunk_0000.npy",
+      "source_group": "idea400/Waving_during_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "341c43465a9af7030b4c65b53a089991a11256b95fa44aea42412e41ea060bc8",
+      "zip_crc32": 4180593146
+    },
+    {
+      "archive_path": "data/g1/idea400/Waving_during_walking_clip1_chunk_0001.npy",
+      "source_group": "idea400/Waving_during_walking",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "487f7008d879f5ce2d24984065856f83a21ebd8c380111097ab0fc3f0776d842",
+      "zip_crc32": 311641266
+    },
+    {
+      "archive_path": "data/g1/idea400/Waving_during_walking_clip1_chunk_0002.npy",
+      "source_group": "idea400/Waving_during_walking",
+      "frames_raw": 85,
+      "fps_raw": 30.0,
+      "sha256_raw": "750313e6225e4f3ba394d41dfcc7762620f180a32793529f0cebd1d695aebd8a",
+      "zip_crc32": 1643156517
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Hand_pockets_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Hand_pockets_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "29302695af8abd30529a0d3d8196beb5d444db60b47d29d5fc6f0f02e93dca1d",
+      "zip_crc32": 3486670390
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Hand_pockets_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Hand_pockets_at_the_same_time",
+      "frames_raw": 31,
+      "fps_raw": 30.0,
+      "sha256_raw": "55a9a41c67680ebd749ef918bf1b512b90672732fb5f0e171695620e1051302a",
+      "zip_crc32": 1566458310
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_10_at_the_same_time_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_10_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "88d5f38cbb78e9145973432ab5cff7c2c0161dc9f4ab311c128269f0472a2133",
+      "zip_crc32": 1016159912
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_10_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_10_at_the_same_time_1",
+      "frames_raw": 118,
+      "fps_raw": 30.0,
+      "sha256_raw": "d9c8b89df2e6c372ee3449eaddbd16608fdab72a160f3b05c6396e1998e2eb8c",
+      "zip_crc32": 1428550750
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_10_at_the_same_time_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_10_at_the_same_time_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "e7a325fb501feec31ad8be802dce3c13e9bb02272b615416113ec96e20f1a943",
+      "zip_crc32": 3036819848
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_10_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_10_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "6563b383443744dbd065751d7f05d5f947a84727af4480db3c11c8012d3b7884",
+      "zip_crc32": 977901744
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_10_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_10_at_the_same_time",
+      "frames_raw": 98,
+      "fps_raw": 30.0,
+      "sha256_raw": "001538ad9ee9bfb685b0059c24bf524d18df66a2169f5619ec8c68d106b45d42",
+      "zip_crc32": 4244786161
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_11_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_11_at_the_same_time_1",
+      "frames_raw": 105,
+      "fps_raw": 30.0,
+      "sha256_raw": "83f6ffd21d94d61f0a000260f0e673ec5eb51a126c7ebebdb97379d749784248",
+      "zip_crc32": 2251451994
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_11_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_11_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "458cbcdc574c73519af0da4af3f9ee1067a76c72278c5f6779545c3821c429a3",
+      "zip_crc32": 2270218161
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_11_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_11_at_the_same_time",
+      "frames_raw": 89,
+      "fps_raw": 30.0,
+      "sha256_raw": "8ca3e67708eb5a8e7561c295b14f261fb9ba56172ab078c11168c8ae94421cfc",
+      "zip_crc32": 845901343
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_14_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_14_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "b6a7919b4386c7d7579dd37e980c6f83f9f66b763fd8298784ecc25c7e652ac1",
+      "zip_crc32": 503182419
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_14_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_14_at_the_same_time",
+      "frames_raw": 112,
+      "fps_raw": 30.0,
+      "sha256_raw": "eb44edeb83d0f994c118615721c03189d5a5bda33a346a97a5ca4003dd00d428",
+      "zip_crc32": 3756054683
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_2_at_the_same_time_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_2_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "05f0a65fe41a06ae71edd73e4158791b9575bedd1f65ff4565906e238f722c5a",
+      "zip_crc32": 1278741842
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_2_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_2_at_the_same_time_1",
+      "frames_raw": 44,
+      "fps_raw": 30.0,
+      "sha256_raw": "66223ed7a0cc95764f878f1247baaaa1a7a5e34b633893c0706cbe95db1f0415",
+      "zip_crc32": 1538510269
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_2_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_2_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "8ca5b25627bf9a30f538df6e753113b3e74b0023fca619facbc61f1ecc5c4d88",
+      "zip_crc32": 1140079735
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_2_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_2_at_the_same_time",
+      "frames_raw": 99,
+      "fps_raw": 30.0,
+      "sha256_raw": "c062170c6124ecaa3944bd241b30df8d0482235215f7438cf627aab7da64e955",
+      "zip_crc32": 416896724
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_3_at_the_same_time_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_3_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "ef81ab73895d47cbdefda5dd781f1ccb51378cb3db94f6fc4257cc825fbfc451",
+      "zip_crc32": 1262795555
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_3_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_3_at_the_same_time_1",
+      "frames_raw": 42,
+      "fps_raw": 30.0,
+      "sha256_raw": "2894d7ab92348e24b6dbeccbe65abc4a6d8e374afe02e07aba6ffc5cd67ae922",
+      "zip_crc32": 3071138182
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_3_at_the_same_time_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_3_at_the_same_time_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "c10cb56bf9ec1d620407e5cd19b0366b9a973dcc8affd19b1939f2ca7b4ef8d7",
+      "zip_crc32": 3745612014
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_3_at_the_same_time_2_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_3_at_the_same_time_2",
+      "frames_raw": 61,
+      "fps_raw": 30.0,
+      "sha256_raw": "d6122f520b94659c7fa3c2f0a50a60b5cfc84cc2585deed10add1308fbaedce5",
+      "zip_crc32": 2512919231
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_3_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_3_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "bbdc8431079a02ddbbebf1df86cf8c56e3188c2f6ae00f7ee292cbeceba86195",
+      "zip_crc32": 2096881959
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_3_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_3_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "cf81f7efc48cf63f86a8adb34617f392df64e1354f1fab45728b07fa6c125adc",
+      "zip_crc32": 2593802974
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_3_at_the_same_time_clip1_chunk_0002.npy",
+      "source_group": "idea400/walking_and_Number_3_at_the_same_time",
+      "frames_raw": 46,
+      "fps_raw": 30.0,
+      "sha256_raw": "1fd11ae02fb479559fcc7f091abfd172068702d9b45b37562274b039c7fb9a21",
+      "zip_crc32": 203623401
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_4_at_the_same_time_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_4_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "00ac2d3987ade79eb0911400b64e959038084d87aa0597db93c30bbd80f7c904",
+      "zip_crc32": 3960591899
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_4_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_4_at_the_same_time_1",
+      "frames_raw": 94,
+      "fps_raw": 30.0,
+      "sha256_raw": "ffbd0fd77bcb71682021e7a9bc0a2547e4d2001dbcfdfdbe16e7e17faca74ac7",
+      "zip_crc32": 2101444904
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_4_at_the_same_time_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_4_at_the_same_time_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "9c95592cd338a377d78edfe09d01e5c6f59dd628a1ca7e2a3cebb2a4b7687fd6",
+      "zip_crc32": 2299085219
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_4_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_4_at_the_same_time",
+      "frames_raw": 116,
+      "fps_raw": 30.0,
+      "sha256_raw": "4b943510dce5e2cbbbd55f36448ec905984ce1b96bc85329b242ca604222175d",
+      "zip_crc32": 265411383
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_5_at_the_same_time_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_5_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "be09769eb8ccaac75e7fbedc02e633d0d11ce4c18c04b67f48492be9a9470afc",
+      "zip_crc32": 1990189156
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_5_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_5_at_the_same_time_1",
+      "frames_raw": 87,
+      "fps_raw": 30.0,
+      "sha256_raw": "249af53dc559dab7a4124bd1af52bbbf6285c6112f8e5bbf35e613c373960381",
+      "zip_crc32": 2177375383
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_5_at_the_same_time_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_5_at_the_same_time_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "3671162fd27ab433f2b904a9f0600b4a49c8808d92c307908ddf4cc3ce5c3724",
+      "zip_crc32": 2954427452
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_5_at_the_same_time_2_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_5_at_the_same_time_2",
+      "frames_raw": 58,
+      "fps_raw": 30.0,
+      "sha256_raw": "f51432359956fcc5b00362917742bb4b08d99ccaac4e832118c66098d898b255",
+      "zip_crc32": 1084713871
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_5_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_5_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "50cad2758c89722a1ada5ea8681ffbff223ce8d7163ed5a91944683e7bddf584",
+      "zip_crc32": 390264631
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_5_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_5_at_the_same_time",
+      "frames_raw": 102,
+      "fps_raw": 30.0,
+      "sha256_raw": "0fa3cefa54d57bb88e0103c70206ac75815dd4348b9ca669b4262b59bb814087",
+      "zip_crc32": 3982244415
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_6_at_the_same_time_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_6_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "75abe360eb527390f68bc00ad20a17feab68d2c395508ef5d40a7e6d228f152c",
+      "zip_crc32": 3665407348
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_6_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_6_at_the_same_time_1",
+      "frames_raw": 55,
+      "fps_raw": 30.0,
+      "sha256_raw": "8bb4fc8763e8469d14c5aea75674c24a51bf467cd6e9333b9ffaa6ac532adb2c",
+      "zip_crc32": 268960335
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_6_at_the_same_time_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_6_at_the_same_time_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "f7a2dbc9d7a5dc2f17e479901e3578121587e030289bb2c6b3179f419b0e8b99",
+      "zip_crc32": 2979047184
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_6_at_the_same_time_2_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_6_at_the_same_time_2",
+      "frames_raw": 80,
+      "fps_raw": 30.0,
+      "sha256_raw": "46bad8c4448cfd8394fda856b6f46ce8141ae70acd2fd141387b086d0a768bea",
+      "zip_crc32": 1594192322
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_6_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_6_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "15762285987bc493060edb791c2861efe72e2785f39243e88342b31cb3b13f2d",
+      "zip_crc32": 1916918328
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_6_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_6_at_the_same_time",
+      "frames_raw": 86,
+      "fps_raw": 30.0,
+      "sha256_raw": "cd34f5b68f8d14e372747c9c000b8842396be02da0cd32901edbba4a8dfafc0c",
+      "zip_crc32": 2733890420
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_8_at_the_same_time_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_8_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "459bb367995e31a7105a511e744ce4a7221cc41acdfe0a87459875556239ffef",
+      "zip_crc32": 150430054
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_8_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_8_at_the_same_time_1",
+      "frames_raw": 122,
+      "fps_raw": 30.0,
+      "sha256_raw": "f40aca1f150cecff8d44823cdbb2dd1d793325993b872b7bb3c0605ed2f04b5c",
+      "zip_crc32": 125092737
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_8_at_the_same_time_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_8_at_the_same_time_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "ebbc8d77d74e32b2dbc4f952462adbff05d76ea50c71d4cf7ddaf413c56b7c62",
+      "zip_crc32": 708363004
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_8_at_the_same_time_2_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_8_at_the_same_time_2",
+      "frames_raw": 76,
+      "fps_raw": 30.0,
+      "sha256_raw": "3e11875e8646352a4e8c2a206ca6f696f32c7846f8a29243eb76f8b261aedf1f",
+      "zip_crc32": 4004937370
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_8_at_the_same_time_3_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_8_at_the_same_time_3",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "2cff6137f4fe24405680400085b4b908b48c1316a8836562007dfd3c09132f47",
+      "zip_crc32": 1074908941
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_8_at_the_same_time_3_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_8_at_the_same_time_3",
+      "frames_raw": 40,
+      "fps_raw": 30.0,
+      "sha256_raw": "065f4358e3ff662aaf1a06eab48d436a5c7bb92dd753845a7466cc0edc9d9cd4",
+      "zip_crc32": 1030468352
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_8_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_8_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "e86cdbc3aa1d7cc1210fb91e10e7bc07425698520249a1b474beee856cd7ba51",
+      "zip_crc32": 1544480681
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_8_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_8_at_the_same_time",
+      "frames_raw": 103,
+      "fps_raw": 30.0,
+      "sha256_raw": "a4536a26e45323c07d6953f62a063c8996c91639cc86962bec86d0183f257ec5",
+      "zip_crc32": 1311479040
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_9_at_the_same_time_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_9_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "d23addaad452e894433dec38e802bea1ab8239bfcc4cf74717972449b3e81404",
+      "zip_crc32": 1402596720
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_9_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_9_at_the_same_time_1",
+      "frames_raw": 104,
+      "fps_raw": 30.0,
+      "sha256_raw": "5057030c14d10937804dd24ac6e93d357fc89c823e66e07e9960364e421b7ed9",
+      "zip_crc32": 3209620069
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_9_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Number_9_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "976999b6a2849026193a73cccd98100d87e55385bfd6034c11861c719322c851",
+      "zip_crc32": 2908013978
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_9_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Number_9_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "41955368d6d7014e47a2073a87e84333255edaffc71e4f6ce20005a87acafb14",
+      "zip_crc32": 446103611
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Number_9_at_the_same_time_clip1_chunk_0002.npy",
+      "source_group": "idea400/walking_and_Number_9_at_the_same_time",
+      "frames_raw": 39,
+      "fps_raw": 30.0,
+      "sha256_raw": "07340701ea0e1077719d72278d06e26aa64ad6cc80865a6117d5515ca63c879e",
+      "zip_crc32": 2420003285
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Pointing_at_something_at_the_same_time_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Pointing_at_something_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "1e2032282ae17dc2dd9c02d0c8c4ddc8912dc4db1a3184a42f157c2a7b1d80ff",
+      "zip_crc32": 1677191638
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Pointing_at_something_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Pointing_at_something_at_the_same_time_1",
+      "frames_raw": 90,
+      "fps_raw": 30.0,
+      "sha256_raw": "8e3af3c43ce15fbf570bd1ed66476f2147eedab10c5dbb2ff5b72bc12dd60458",
+      "zip_crc32": 218848279
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Pointing_at_something_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Pointing_at_something_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "3b38cd7269d645bda07715d59a8162ad4772df7a052826c7b88bb35a135157a2",
+      "zip_crc32": 2139358702
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Pointing_at_something_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Pointing_at_something_at_the_same_time",
+      "frames_raw": 70,
+      "fps_raw": 30.0,
+      "sha256_raw": "249171b6de23eda3e8930a06706a24910557346f4f85686aee9017695ce563bd",
+      "zip_crc32": 2211666861
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Pointing_at_something_at_the_same_time_clip2_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Pointing_at_something_at_the_same_time",
+      "frames_raw": 51,
+      "fps_raw": 30.0,
+      "sha256_raw": "430f4d04edf08609283b67e94deafb73550ba809cf0fcb0cd8eae00ae87bfe18",
+      "zip_crc32": 3488385171
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Pointing_at_something_at_the_same_time_clip3_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Pointing_at_something_at_the_same_time",
+      "frames_raw": 33,
+      "fps_raw": 30.0,
+      "sha256_raw": "2af9dfb49a0d9ed720b8a8823905cdd7a4d29c212dd3eed0938ef2f181adf5d9",
+      "zip_crc32": 1680498622
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Salute_at_the_same_time_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Salute_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "46e371637c8ad74c29397d7109efc5384e40a14121df07083dce0f46796472a3",
+      "zip_crc32": 492708922
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Salute_at_the_same_time_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Salute_at_the_same_time_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "f4423176aecf4a6994e891effc8631d54a500c29596a64bc791a4ca7d3d12d7f",
+      "zip_crc32": 2611517158
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Salute_at_the_same_time_1_clip1_chunk_0002.npy",
+      "source_group": "idea400/walking_and_Salute_at_the_same_time_1",
+      "frames_raw": 54,
+      "fps_raw": 30.0,
+      "sha256_raw": "034a398f25570e8ea819aebfdfae3dabc3ec2951f65c7bf9a4d8082f9e22c4b2",
+      "zip_crc32": 1595603961
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Salute_at_the_same_time_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_and_Salute_at_the_same_time",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "738b9cdcfa06a7e190ef7285ea395b45b6e28a8b2492f7943f5fb8c11cea00ac",
+      "zip_crc32": 1342221300
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_and_Salute_at_the_same_time_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_and_Salute_at_the_same_time",
+      "frames_raw": 95,
+      "fps_raw": 30.0,
+      "sha256_raw": "8d645bbaf70bf04986a159c761f284e3fbf8e1603f4ff9a74672e51d1104d045",
+      "zip_crc32": 1200499972
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Clapping_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_during_Clapping_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "191f32e879c05cf8437a01a99f86b8a0ef5a7618cf3e9540fa5a8499c22b4986",
+      "zip_crc32": 4008355508
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Clapping_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Clapping_1",
+      "frames_raw": 41,
+      "fps_raw": 30.0,
+      "sha256_raw": "70fc7659721f73fd4313196191ad3ee76ab2b32f66109a932038f32a966a88ad",
+      "zip_crc32": 2082621213
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Clapping_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_during_Clapping",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "dc116b4ca9943eafe9b3ff2b6a34728afd562fe07748932f50ba55b87b6e452f",
+      "zip_crc32": 3654907897
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Clapping_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Clapping",
+      "frames_raw": 103,
+      "fps_raw": 30.0,
+      "sha256_raw": "c6071a3ca9bd3beed465da568b564164f12b411afd6ffcf9d434c17b6b137001",
+      "zip_crc32": 1716029238
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Hand_pockets_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_during_Hand_pockets",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "c8ddfa8bd16af5f793f58f160c73676e597f2cb584daef5337fc0d124242dc1d",
+      "zip_crc32": 703695536
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Hand_pockets_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Hand_pockets",
+      "frames_raw": 85,
+      "fps_raw": 30.0,
+      "sha256_raw": "a5d50e5e36fdcfc9f976ec76814594c6ecd72a43c300fa0f68d0036d7d4ee3ab",
+      "zip_crc32": 1514735681
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Number_10_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_during_Number_10_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "5177b69ee34c15817fc6dbb3d4594f5ead11506f08c7ad796dfa377779ed7a1c",
+      "zip_crc32": 969356562
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Number_10_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Number_10_1",
+      "frames_raw": 131,
+      "fps_raw": 30.0,
+      "sha256_raw": "d53665b49e2c388a74dada3508a38615439e6b8aec08eea2516c0a6153b8930f",
+      "zip_crc32": 4259480865
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Number_14_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_during_Number_14_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "27bfb9d495adce30069fb462ebd59f364ee6530cded049f063fba3f2b942bc38",
+      "zip_crc32": 2112370956
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Number_14_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_during_Number_14",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "185c911accb20f7dd1ebe94a493bd7e24369bfd739528f9ec88f7d1f8c212d57",
+      "zip_crc32": 1818991828
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Number_14_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Number_14",
+      "frames_raw": 129,
+      "fps_raw": 30.0,
+      "sha256_raw": "5a9733b838cfc4309d58aa92418aa9deadc4462326bc1af88bb594439041135c",
+      "zip_crc32": 3063215833
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Number_15_3_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_during_Number_15_3",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "01eeccf6275f7cec2900d01edacdfc2c98c6af9f53a60ef5889f0e81997b4854",
+      "zip_crc32": 2338519813
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Number_15_3_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Number_15_3",
+      "frames_raw": 119,
+      "fps_raw": 30.0,
+      "sha256_raw": "8e88ce2008eca52151b16632a5eb32a5f319c8d39be0482cfd9bff26a2d001d8",
+      "zip_crc32": 4070808764
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Number_15_4_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Number_15_4",
+      "frames_raw": 79,
+      "fps_raw": 30.0,
+      "sha256_raw": "f10cc97450ad4090c37001a676c725204e1ba6ffe320aaa812ef4ddcba85ba80",
+      "zip_crc32": 3299719114
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Number_7_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Number_7",
+      "frames_raw": 96,
+      "fps_raw": 30.0,
+      "sha256_raw": "15ec57759e124871ab5c1d58e50dd52981a1034a8f6581e97fc10926bff69b51",
+      "zip_crc32": 1390424043
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Number_8_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Number_8",
+      "frames_raw": 46,
+      "fps_raw": 30.0,
+      "sha256_raw": "300fa8a302707d57b180b817ac37f1d22d471da95831ddcad57f5c54f0279751",
+      "zip_crc32": 663791557
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Number_9_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_during_Number_9_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "aa9cc49624b384ed5a2eea2599f018525f49a5b327bd3f2a1dfeaca31737d266",
+      "zip_crc32": 2321115809
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Number_9_2_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Number_9_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "688823248d30f0b8a4cd1cdc15bd1918f0508e4b928823126fabbfc2fd0c17d3",
+      "zip_crc32": 335298657
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Number_9_2_clip1_chunk_0002.npy",
+      "source_group": "idea400/walking_during_Number_9_2",
+      "frames_raw": 51,
+      "fps_raw": 30.0,
+      "sha256_raw": "1fa22299cbde724fb4e919a9515443dffb60c8f12194c4e4daf983f6fc3f9cb5",
+      "zip_crc32": 2108812598
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Pointing_the_maze_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_during_Pointing_the_maze",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "975f6a0b0a57c73b4b33ae7a33337d943e48bf8f03ae5cd82683c125cd1ed014",
+      "zip_crc32": 140697305
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Salute_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_during_Salute_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "4db63fb809fd8aaa93e8f72c686e77e58fb84122acc5498d3d911e2bd2ab4a7a",
+      "zip_crc32": 4058637174
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Salute_2_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_during_Salute_2",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "2c4bdc0969eb797269ed177e730f33ba8bfee938a146ef237fefe262b76895b1",
+      "zip_crc32": 3540748158
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Salute_2_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Salute_2",
+      "frames_raw": 90,
+      "fps_raw": 30.0,
+      "sha256_raw": "eb9c4f110468f8b352ecd3c33a1067e30c9323beb22eb9f0f3eb074288a95bda",
+      "zip_crc32": 3516229131
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Salute_3_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_during_Salute_3",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "6e68adaa50e048b6d03f7fc2b10e5282be7f4371120c56f63f38bba3e0ce27a3",
+      "zip_crc32": 3793835562
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Salute_3_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Salute_3",
+      "frames_raw": 60,
+      "fps_raw": 30.0,
+      "sha256_raw": "93034c6af73ddca01486b4a281bc9a7bec5d9e4c429d4d46a542d65a56f86f41",
+      "zip_crc32": 1419989767
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Salute_4_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_during_Salute_4",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "26a1ab29c74a5c1187fae5eb9b304923c1659cb8afb8aca17d48caaca35a814d",
+      "zip_crc32": 923101569
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Salute_4_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Salute_4",
+      "frames_raw": 52,
+      "fps_raw": 30.0,
+      "sha256_raw": "3bfa67b0f0f4f3e768e30188dfa5f72d899a6b541fe834c72a62ec0138d9a780",
+      "zip_crc32": 2068509022
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Salute_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Salute",
+      "frames_raw": 90,
+      "fps_raw": 30.0,
+      "sha256_raw": "0f0a51f72263fb4ae7ba5c9cfd162eb8c23beff52de21fe85590a24260004b20",
+      "zip_crc32": 935138830
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_during_Waving_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_during_Waving",
+      "frames_raw": 122,
+      "fps_raw": 30.0,
+      "sha256_raw": "7c0484a61bab754bde36b1964d1856db5b14b5695178434138cd0d0603d8e34a",
+      "zip_crc32": 3720949803
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Arm_Swing_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_while_Arm_Swing",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "b72dd119479f60bc17ba43042360f2c52ab52a2627f9a0b1d086a6edaeedac67",
+      "zip_crc32": 3220346967
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Arm_Swing_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_while_Arm_Swing",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "438374313bcc0731687031f4b60d8df0a9796f90a9e8d19bd2843b0cf0dc0cdd",
+      "zip_crc32": 139253117
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Arm_Swing_clip1_chunk_0002.npy",
+      "source_group": "idea400/walking_while_Arm_Swing",
+      "frames_raw": 36,
+      "fps_raw": 30.0,
+      "sha256_raw": "0c0c70714ff779441b0257a6fcd0a361acb642768fb705461b1285d08814696a",
+      "zip_crc32": 1815734942
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Hand_pockets_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_while_Hand_pockets",
+      "frames_raw": 58,
+      "fps_raw": 30.0,
+      "sha256_raw": "ec4710c64ed124528c50de9a325b6c6a94751dbecf8c9f7c234ed45b98d657a7",
+      "zip_crc32": 4065023844
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Hand_pockets_clip2_chunk_0000.npy",
+      "source_group": "idea400/walking_while_Hand_pockets",
+      "frames_raw": 100,
+      "fps_raw": 30.0,
+      "sha256_raw": "1b3eac370aa48e966b59cb4b80f2bdd2598a5465520c8fb598b76511d153df0d",
+      "zip_crc32": 1363556120
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Number_11_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_while_Number_11",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "0e947e4c998ae300fd0ab4955bb2972d78a4f4d9187b7e76b776ffab7be01d85",
+      "zip_crc32": 3638005825
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Number_11_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_while_Number_11",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "daffe3bb85c4c14951782639561f9bf79c09807d73dbedab80bce2b40e88e069",
+      "zip_crc32": 1093459907
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Number_13_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_while_Number_13",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "525d1788e7b7188a1575444ebce932b912bf89d4ede180935f19eb77a61f8151",
+      "zip_crc32": 4283251909
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Number_13_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_while_Number_13",
+      "frames_raw": 119,
+      "fps_raw": 30.0,
+      "sha256_raw": "10f8ecbf59998fe8b9d06c97b064ccfd1ebc2f10fb9577377d251723cc71303a",
+      "zip_crc32": 116288009
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Number_15_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_while_Number_15",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "925226d68ff07cb192bd47d5e03746e95e0cb77e65779fe123cf6160e9941c91",
+      "zip_crc32": 2082058366
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Number_15_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_while_Number_15",
+      "frames_raw": 116,
+      "fps_raw": 30.0,
+      "sha256_raw": "a69897ef1ebe81d43ed969b4bcec95f0f96b6ea2fb48552894be6a76fbc11a2c",
+      "zip_crc32": 3375003155
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Number_3_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_while_Number_3",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "06f84158f6582b04d5c37e8057ce69810039075b27139b69cc42106bc0ce7edf",
+      "zip_crc32": 1751057412
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Number_3_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_while_Number_3",
+      "frames_raw": 49,
+      "fps_raw": 30.0,
+      "sha256_raw": "a6931a5ae9b6b032d3fecadc0035457afac720ec8fc04d80c57b87a384ffef19",
+      "zip_crc32": 3106321634
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Number_8_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_while_Number_8",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "a85fbd4a01ff2b96e462f502092b77ed00f8aadd1024daee873f4d5c332592f1",
+      "zip_crc32": 2201657888
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Number_8_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_while_Number_8",
+      "frames_raw": 48,
+      "fps_raw": 30.0,
+      "sha256_raw": "9f0f59b82604c0701de296ca90d33bb31de9a894fa62f9a03d108aeb56b2e5af",
+      "zip_crc32": 3937309253
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Pointing_at_something_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_while_Pointing_at_something",
+      "frames_raw": 66,
+      "fps_raw": 30.0,
+      "sha256_raw": "54170cf67ade0c7ec8e8806635f8e2bff810f4255f499767862795812506976f",
+      "zip_crc32": 305589189
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Pointing_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_while_Pointing",
+      "frames_raw": 129,
+      "fps_raw": 30.0,
+      "sha256_raw": "ead5ee78413bdc5238de70447582d21c93d18af5235c446a7f6d37e557dc4112",
+      "zip_crc32": 3244371916
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Pointing_clip2_chunk_0000.npy",
+      "source_group": "idea400/walking_while_Pointing",
+      "frames_raw": 41,
+      "fps_raw": 30.0,
+      "sha256_raw": "14bc4713ae9e2b767e2ebf7db94e8355814b068784f6d19f9ef28c7e27689e9c",
+      "zip_crc32": 417532444
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Pointing_clip3_chunk_0000.npy",
+      "source_group": "idea400/walking_while_Pointing",
+      "frames_raw": 75,
+      "fps_raw": 30.0,
+      "sha256_raw": "af7c4acf21fb8d1de902b09034a8e5f150143de2b8087aab728346740d978e44",
+      "zip_crc32": 2671153977
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Salute_1_clip1_chunk_0000.npy",
+      "source_group": "idea400/walking_while_Salute_1",
+      "frames_raw": 120,
+      "fps_raw": 30.0,
+      "sha256_raw": "f6e22df5e056eda2d8fb0b4197a241fe546162b31b6ea5597f02bbce4fd7d461",
+      "zip_crc32": 4204641595
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Salute_1_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_while_Salute_1",
+      "frames_raw": 67,
+      "fps_raw": 30.0,
+      "sha256_raw": "c70f00c885f8dc871ed6c0f397f427dd1aaefe65e4da86f595670cccd7a14f30",
+      "zip_crc32": 2290808316
+    },
+    {
+      "archive_path": "data/g1/idea400/walking_while_Salute_clip1_chunk_0001.npy",
+      "source_group": "idea400/walking_while_Salute",
+      "frames_raw": 125,
+      "fps_raw": 30.0,
+      "sha256_raw": "92b01be5e7c24dd1b1fe55ab26b44d961239e775a11b4389138594c4db262039",
+      "zip_crc32": 881646261
+    }
+  ]
+}

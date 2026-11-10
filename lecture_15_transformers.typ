@@ -433,7 +433,7 @@ $ bold(x) = f_k ( dots f_2 ( f_1 (bold(x), bold(theta)_1), bold(theta_2)), dots,
 
 *Answer:* Autoencoder! But it was just two functions, not $k$ functions #pause
 
-https://colab.research.google.com/drive/1qVIbQKpTuBYIa7FvC4IH-kJq-E0jmc0d#scrollTo=bg74S-AvbmJz
+https://colab.research.google.com/drive/1-q26pg43Rl3zrdCFq4YEljkGDxzBSCR8?usp=sharing
 
 ==
 $ bold(x) = f_k ( dots f_2 ( f_1 (bold(x), bold(theta)_1), bold(theta_2)), dots, bold(theta)_k) $ #pause
@@ -586,7 +586,7 @@ This helps prevent vanishing and exploding gradients #pause
 
 Now, let's combine residual connections and layer norm and try our very deep network again
 
-https://colab.research.google.com/drive/1qVIbQKpTuBYIa7FvC4IH-kJq-E0jmc0d#scrollTo=iQtXjGYiz5CD
+https://colab.research.google.com/drive/1q6GoEhoyjWxDbNUjP9HGAf2sGBxwaTc2?usp=sharing
 
 = Transformers
 
@@ -877,7 +877,7 @@ class Transformer(nn.Module):
 ==
 Let us code up the transformer in colab 
 
-https://colab.research.google.com/drive/1qVIbQKpTuBYIa7FvC4IH-kJq-E0jmc0d#scrollTo=iQtXjGYiz5CD
+https://colab.research.google.com/drive/1PPFSgpKQroBUb94Ij5vx5u4g-Nnnky0Z?usp=sharing
 
 = Applications
 

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "English translation; no model or data changes",
+  "notebooks": {
+    "instructor": {
+      "code_cells_unchanged": 16,
+      "markdown_cells_translated": 18,
+      "recorded_outputs_preserved": true,
+      "chinese_text_remaining": false
+    },
+    "student": {
+      "code_cells_unchanged": 16,
+      "markdown_cells_translated": 17,
+      "recorded_outputs_preserved": true,
+      "chinese_text_remaining": false
+    }
+  },
+  "data_identical_to_original": true,
+  "original_chinese_files_unchanged": true,
+  "training_reexecuted_for_translation": false,
+  "note": "Code cells are byte-identical to the previously executed and verified originals; instructor outputs are preserved from those runs."
+}

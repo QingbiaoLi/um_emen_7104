@@ -1,0 +1,16 @@
+{
+  "sha256_gzip": "164f3c7416a1d79029d7b5dfbcba4d76e7a3721d085c12b20a9f753c049fc574",
+  "sha256_csv": "c9d385d4fb594d3560e42610af92efd7a5b04b395916c1817ac7331e18e61f2f",
+  "raw_rows": 169765,
+  "url": "https://data.transportation.gov/resource/8ect-6jqj.csv?%24select=distinct+vehicle_id%2Cframe_id%2Cglobal_time%2Clocal_x%2Clocal_y&%24where=location+%3D+%27i-80%27+AND+global_time+%3E%3D+1113433135000+AND+global_time+%3C+1113434035000+AND+vehicle_id+%3C%3D+500+AND+v_class+%3D+2&%24order=vehicle_id%2Cglobal_time%2Cframe_id&%24limit=500000",
+  "retrieved_date": "2026-10-30",
+  "publisher": "Federal Highway Administration / USDOT",
+  "title": "Next Generation Simulation (NGSIM) Vehicle Trajectories and Supporting Data",
+  "source": "https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajectories/8ect-6jqj",
+  "rights": "public",
+  "raw_units": "feet",
+  "conversion_to_meters": 0.3048,
+  "original_dt_seconds": 0.1,
+  "model_dt_seconds": 0.2,
+  "note": "Real observed passenger-car trajectories; one I-80 recording only. No synthetic trajectories."
+}

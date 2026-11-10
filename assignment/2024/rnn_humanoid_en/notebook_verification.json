@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "answer_blocks": 13,
+  "standalone_instructor_execution": true,
+  "unfilled_student_expected_failure": "NotImplementedError: TODO: features",
+  "filled_student_execution": true,
+  "filled_student_matches_instructor": true,
+  "python": "3.12.13",
+  "versions": {
+    "torch": "2.15.0",
+    "numpy": "2.5.4"
+  },
+  "test": {
+    "constant_velocity": {
+      "ADE_m": 0.18423333764076233,
+      "FDE_m": 0.37542232871055603
+    },
+    "last_position": {
+      "ADE_m": 0.35540372133255005,
+      "FDE_m": 0.6206650733947754
+    },
+    "elman": {
+      "ADE_m": 0.1145867183804512,
+      "FDE_m": 0.2391836792230606
+    },
+    "gated": {
+      "ADE_m": 0.1191936507821083,
+      "FDE_m": 0.244357630610466
+    }
+  },
+  "test_macro_source": {
+    "constant_velocity": {
+      "ADE_m": 0.1885940457880497,
+      "FDE_m": 0.38275830060243604
+    },
+    "last_position": {
+      "ADE_m": 0.3177555491030216,
+      "FDE_m": 0.5573869252204895
+    },
+    "elman": {
+      "ADE_m": 0.10878449156880379,
+      "FDE_m": 0.22569470435380937
+    },
+    "gated": {
+      "ADE_m": 0.11761063188314438,
+      "FDE_m": 0.24111059606075286
+    }
+  },
+  "counts": {
+    "train": {
+      "source_recordings": 109,
+      "windows": 794
+    },
+    "val": {
+      "source_recordings": 23,
+      "windows": 172
+    },
+    "test": {
+      "source_recordings": 25,
+      "windows": 191
+    }
+  }
+}

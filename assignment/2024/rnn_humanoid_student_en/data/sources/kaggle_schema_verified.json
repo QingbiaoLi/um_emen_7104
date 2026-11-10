@@ -1,0 +1,53 @@
+{
+  "source": "https://www.kaggle.com/datasets/zara2099/humanoid-robot-navigation-dataset",
+  "retrieved_date": "2026-10-30",
+  "file": "humanoid_navigation_dataset.csv",
+  "rows": 1000,
+  "columns": [
+    "time_step",
+    "robot_id",
+    "terrain_type",
+    "obstacle_count",
+    "obstacle_distance",
+    "bezier_control_points",
+    "planned_trajectory_length",
+    "mpc_adjustment",
+    "gait_stability_index",
+    "center_of_mass_offset",
+    "energy_consumption",
+    "navigation_status",
+    "navigation_score"
+  ],
+  "sample_rows": [
+    {
+      "time_step": "0",
+      "robot_id": "R04",
+      "terrain_type": "Indoor",
+      "obstacle_count": "7",
+      "obstacle_distance": "1.25",
+      "bezier_control_points": "[(3.66, 2.3), (8.54, 8.08), (2.38, 5.6), (5.92, 6.78)]",
+      "planned_trajectory_length": "10.88",
+      "mpc_adjustment": "1.36",
+      "gait_stability_index": "0.62",
+      "center_of_mass_offset": "0.07",
+      "energy_consumption": "305.67",
+      "navigation_status": "success",
+      "navigation_score": "0.139"
+    },
+    {
+      "time_step": "1",
+      "robot_id": "R03",
+      "terrain_type": "Indoor",
+      "obstacle_count": "6",
+      "obstacle_distance": "3.22",
+      "bezier_control_points": "[(8.56, 7.16), (7.74, 1.07), (3.02, 6.25), (1.74, 2.57)]",
+      "planned_trajectory_length": "9.67",
+      "mpc_adjustment": "0.11",
+      "gait_stability_index": "0.61",
+      "center_of_mass_offset": "0.02",
+      "energy_consumption": "134.74",
+      "navigation_status": "unstable",
+      "navigation_score": "0.345"
+    }
+  ]
+}

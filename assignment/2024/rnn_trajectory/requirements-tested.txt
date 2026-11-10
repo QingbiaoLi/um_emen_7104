@@ -1,0 +1,4 @@
+# Direct dependency versions used for the reference CPU run (Python 3.12).
+numpy==2.5.4
+torch==2.15.0
+matplotlib==3.11.2

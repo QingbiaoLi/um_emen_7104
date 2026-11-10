@@ -90,42 +90,42 @@
     outline(title: none, indent: 1em, depth: 1)
 )
 
-= Admin
+// = Admin
 
-==
+// ==
 
-#cimage("figures/lecture_5/wedding.jpg")
+// #cimage("figures/lecture_5/wedding.jpg")
 
-==
-I am sorry I was away for so long! #pause
+// ==
+// I am sorry I was away for so long! #pause
 
-Was only supposed to miss one lecture
-- Lecture day changed from Tuesday to Friday 
-- Big storm cancelled flights
+// Was only supposed to miss one lecture
+// - Lecture day changed from Tuesday to Friday 
+// - Big storm cancelled flights
 
-==
-Yutao tells me his lecture went well
-- Hopefully you enjoyed it!
+// ==
+// Yutao tells me his lecture went well
+// - Hopefully you enjoyed it!
 
-My research students told me exam went well
+// My research students told me exam went well
 
-==
-There is a possibility you lost power and internet during the storm
+// ==
+// There is a possibility you lost power and internet during the storm
 
-I was not here to answer homework questions during office hours
+// I was not here to answer homework questions during office hours
 
-I will extend the Assignment 2 deadline by one week
+// I will extend the Assignment 2 deadline by one week
 
-==
+// ==
 
-Assignment 3 is now released
+// Assignment 3 is now released
 
-Discuss it at the end of lecture
+// Discuss it at the end of lecture
 
-Do not forget about the final project!
+// Do not forget about the final project!
 
-You should start to form groups soon
-- Talk to your classmates, make friends!
+// You should start to form groups soon
+// - Talk to your classmates, make friends!
 
 = Review
 
@@ -251,22 +251,22 @@ You should start to form groups soon
   //#side-by-side[#cimage("figures/lecture_4/heaviside.svg")][#cimage("figures/lecture_4/sigmoid.svg")][ $ sigma(z) = 1 / (1 + e^(-z)) $]
 
 
-==
-  In `jax`, we compute the gradient using the `jax.grad` function #pause
+// ==
+//   In `jax`, we compute the gradient using the `jax.grad` function #pause
 
-  ```python
-  import jax
+//   ```python
+//   import jax
 
-  def L(theta, X, Y):
-    ...
+//   def L(theta, X, Y):
+//     ...
 
-  # Create a new function that is the gradient of L
-  # Then compute gradient of L for given inputs
-  J = jax.grad(L, argnums=2)(X, Y, theta)
-  # Update parameters
-  alpha = 0.0001
-  theta = theta - alpha * J
-  ```
+//   # Create a new function that is the gradient of L
+//   # Then compute gradient of L for given inputs
+//   J = jax.grad(L, argnums=2)(X, Y, theta)
+//   # Update parameters
+//   alpha = 0.0001
+//   theta = theta - alpha * J
+//   ```
 
 ==
   In `torch`, we backpropagate through a graph of operations
@@ -296,7 +296,7 @@ You should start to form groups soon
   #v(1em) 
   Time for some interactive torch coding
 
-  https://colab.research.google.com/drive/1W8WVZ8n_9yJCcOqkPVURp_wJUx3EQc5w
+  https://colab.research.google.com/drive/1EXhGq5mcKcYkKOdbsXjUoJaSKs-J78yk?usp=sharing
 
 // ~60:00
 
@@ -753,9 +753,11 @@ $ P: E -> [0, 1] $ #pause
   The rest of this course will examine neural network architectures 
 
 ==
-  https://colab.research.google.com/drive/1BGMIE2CjlLJOH-D2r9AariPDVgxjWlqG?usp=sharing
+  https://colab.research.google.com/drive/16x5yGf8wVhEGY48r0Wgi8uwlsS0AGVC-?usp=sharing
 
 ==
-  Homework 3 is released, you have two weeks to complete it #pause
+  Homework 2 is released, you have two weeks to complete it #pause
 
-  https://colab.research.google.com/drive/1LainS20p6c3YVRFM4XgHRBODh6dvAaT2?usp=sharing#scrollTo=q8pJST5xFt-p 
+  https://colab.research.google.com/drive/1etlW__tthA49DRNVHnTU_nE9yqpEz01l?usp=sharing
+
+  // https://colab.research.google.com/drive/1FguiHDaAwCMrAdU16tvUDmPGrPHUM4-e?usp=sharing
