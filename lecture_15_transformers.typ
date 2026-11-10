@@ -92,74 +92,74 @@
     outline(title: none, indent: 1em, depth: 1)
 )
 
-= Admin
-==
-All homework and exam scores entered on Moodle #pause
-- You should have a good idea of your grade in the course #pause
-- Exam 3 scores fairly low (41%) #pause
-    - Partly due to many zeros (students skipped exam) #pause
-    - Partly due to difficult exam #pause
+// = Admin
+// ==
+// All homework and exam scores entered on Moodle #pause
+// - You should have a good idea of your grade in the course #pause
+// - Exam 3 scores fairly low (41%) #pause
+//     - Partly due to many zeros (students skipped exam) #pause
+//     - Partly due to difficult exam #pause
 
-- Mean exam score (all 3 exams, lowest dropped): 77% #pause
-    - I expect exam scores to be lower than homework
+// - Mean exam score (all 3 exams, lowest dropped): 77% #pause
+//     - I expect exam scores to be lower than homework
 
-==
-UM grade table 
+// ==
+// UM grade table 
 
-#align(center, table(
-  columns: (auto, auto, auto),
-  inset: 10pt,
-  align: left,
+// #align(center, table(
+//   columns: (auto, auto, auto),
+//   inset: 10pt,
+//   align: left,
   
-  // Headers
-  [*Letter Grades*], [*Grade Points*], [*Percentage*],
+//   // Headers
+//   [*Letter Grades*], [*Grade Points*], [*Percentage*],
 
-  // Data
-  [A],  [4.0], [93--100],
-  [A-], [3.7], [88--92],
-  [B+], [3.3], [83--87],
-  [B],  [3.0], [78--82],
-  [B-], [2.7], [73--77],
-  [C+], [2.3], [68--72],
-  [C],  [2.0], [63--67],
-))
+//   // Data
+//   [A],  [4.0], [93--100],
+//   [A-], [3.7], [88--92],
+//   [B+], [3.3], [83--87],
+//   [B],  [3.0], [78--82],
+//   [B-], [2.7], [73--77],
+//   [C+], [2.3], [68--72],
+//   [C],  [2.0], [63--67],
+// ))
 
-==
-Course Grade distribution (103 students)
-#align(center, table(
-  columns: (auto, auto),
-  inset: 10pt,
-  align: left,
+// ==
+// Course Grade distribution (103 students)
+// #align(center, table(
+//   columns: (auto, auto),
+//   inset: 10pt,
+//   align: left,
   
-  // Headers
-  [*Letter Grades*], [*\# Students*],
+//   // Headers
+//   [*Letter Grades*], [*\# Students*],
 
-  // Data
-  [A],  [63],
-  [A-], [16],
-  [B+], [5],
-  [B],  [9],
-  [B-], [0],
-  [C+], [3],
-  [C],  [1],
-  [F], [6]
-))
+//   // Data
+//   [A],  [63],
+//   [A-], [16],
+//   [B+], [5],
+//   [B],  [9],
+//   [B-], [0],
+//   [C+], [3],
+//   [C],  [1],
+//   [F], [6]
+// ))
 
-==
-Mean course score score without final project is very high #pause
-- All students currently passing #pause
-    - Students with F either caught cheating or dropped course #pause
-    - Lowest grade: C #pause
-- I curve up to 85% #pause
-    - Does not appear necessary this time #pause
-    - I have no problem giving A to all students 
-==
-Do not have A, but want one? #pause
-- Do well on the final project, 30% of your score #pause
-    - If you put in effort you will get a good score #pause
-        - Try to enjoy the project and learn something interesting #pause
-- Try and finish before exam week #pause
-    - Can focus on other course exams
+// ==
+// Mean course score score without final project is very high #pause
+// - All students currently passing #pause
+//     - Students with F either caught cheating or dropped course #pause
+//     - Lowest grade: C #pause
+// - I curve up to 85% #pause
+//     - Does not appear necessary this time #pause
+//     - I have no problem giving A to all students 
+// ==
+// Do not have A, but want one? #pause
+// - Do well on the final project, 30% of your score #pause
+//     - If you put in effort you will get a good score #pause
+//         - Try to enjoy the project and learn something interesting #pause
+// - Try and finish before exam week #pause
+//     - Can focus on other course exams
 
 = Review
 
@@ -1340,9 +1340,9 @@ In the first lecture, I asked everyone in this class to do one thing #pause
 
   #align(center)[*炼模未动，先问苍生祸福。*]
 
-= Course Evaluation
+// = Course Evaluation
 
-== 
-Please scan the QR code and complete the course survey #pause
+// == 
+// Please scan the QR code and complete the course survey #pause
 
-#cimage("figures/lecture_12/qr.png", height:85%)
+// #cimage("figures/lecture_12/qr.png", height:85%)

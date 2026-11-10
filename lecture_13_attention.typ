@@ -35,24 +35,24 @@
     outline(title: none, indent: 1em, depth: 1)
 )
 
-= Admin
-==
-Last exam next week #pause
+// = Admin
+// ==
+// Last exam next week #pause
 
-Preliminary questions (still making exam, may change) #pause
-- 1 Question perceptron autoencoder and objective
-- 1 Question rewriting function as recurrent function 
-- 1 Question evaluating scans
-- 1 Question log likelihood derivation
-- 1 Question self attention ($bold(Q) bold(K)^top$, $softmax$)
+// Preliminary questions (still making exam, may change) #pause
+// - 1 Question perceptron autoencoder and objective
+// - 1 Question rewriting function as recurrent function 
+// - 1 Question evaluating scans
+// - 1 Question log likelihood derivation
+// - 1 Question self attention ($bold(Q) bold(K)^top$, $softmax$)
 
-// TODO: Cleanup attention shapes
+// // TODO: Cleanup attention shapes
 
-= Review
-== 
-Finish VAE coding
+// = Review
+// == 
+// Finish VAE coding
 
-https://colab.research.google.com/drive/1GDg9EfcDQlwySlsjahaZBxp2qRmgh1or?usp=sharing
+// https://colab.research.google.com/drive/1GDg9EfcDQlwySlsjahaZBxp2qRmgh1or?usp=sharing
 
 
 /*
@@ -1229,20 +1229,20 @@ We can write attention and transformers as a graph neural network #pause
 
 Many ways to teach attention!
 
-= Guest Lecture - Dr. Matteo Bettini
-==
-#side-by-side(columns: (0.4fr, 0.7fr))[
-   #cimage("figures/lecture_11/matteo.jpg") 
-][
-    Dr. Matteo Bettini is a good friend of mine #pause
+// = Guest Lecture - Dr. Matteo Bettini
+// ==
+// #side-by-side(columns: (0.4fr, 0.7fr))[
+//    #cimage("figures/lecture_11/matteo.jpg") 
+// ][
+//     Dr. Matteo Bettini is a good friend of mine #pause
 
-    We did our PhDs together
-]
-==
-Dr. Matteo Bettini 
-- Incoming Research Scientist at Meta's SuperIntelligence Lab #pause
-- Focus on agentic LLMs #pause
-- Previously worked at PyTorch #pause
-- PhD in Computer Science at Cambridge #pause
-- MS in Computer Science at Cambridge #pause
-- BS in Computer Engineering at Milan Polytechnic
+//     We did our PhDs together
+// ]
+// ==
+// Dr. Matteo Bettini 
+// - Incoming Research Scientist at Meta's SuperIntelligence Lab #pause
+// - Focus on agentic LLMs #pause
+// - Previously worked at PyTorch #pause
+// - PhD in Computer Science at Cambridge #pause
+// - MS in Computer Science at Cambridge #pause
+// - BS in Computer Engineering at Milan Polytechnic
